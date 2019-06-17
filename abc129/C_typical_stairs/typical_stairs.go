@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// https://atcoder.jp/contests/abc129/tasks/abc129_c
 func main() {
 	var n, m int
 	fmt.Scan(&n, &m)
