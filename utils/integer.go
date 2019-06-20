@@ -1,6 +1,9 @@
 package utils
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func ScanNums(len int) (nums []int) {
 	var num int
@@ -9,4 +12,8 @@ func ScanNums(len int) (nums []int) {
 		nums = append(nums, num)
 	}
 	return
+}
+
+func AbsInt(n1 int, n2 int) int {
+	return int(math.Abs(float64(n1 - n2)))
 }

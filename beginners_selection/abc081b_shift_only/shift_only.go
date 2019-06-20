@@ -1,7 +1,6 @@
 package main
 
 import (
-	"../../utils"
 	"fmt"
 )
 
@@ -9,7 +8,7 @@ import (
 func main() {
 	var length int
 	fmt.Scanf("%d", &length)
-	nums := utils.ScanNums(length)
+	nums := ScanNums(length)
 	dividedCount := 0
 	for {
 		oddNumberExist := false
@@ -27,4 +26,13 @@ func main() {
 		dividedCount++
 	}
 	fmt.Println(dividedCount)
+}
+
+func ScanNums(len int) (nums []int) {
+	var num int
+	for i := 0; i < len; i++ {
+		fmt.Scan(&num)
+		nums = append(nums, num)
+	}
+	return
 }
