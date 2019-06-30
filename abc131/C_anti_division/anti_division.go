@@ -4,11 +4,11 @@ import (
 	"fmt"
 )
 
+// https://atcoder.jp/contests/abc131/tasks/abc131_c
 func main() {
 	var a, b, c, d int
 	fmt.Scan(&a, &b, &c, &d)
-
-	totalNum := b - a + 1
+a
 	lcm := c * d / Gcd(c, d)
 	var cNum, dNum, eNum int
 	if a%c == 0 {

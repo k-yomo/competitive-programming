@@ -5,6 +5,7 @@ import (
 	"math"
 )
 
+// https://atcoder.jp/contests/abc131/tasks/abc131_b
 func main() {
 	var n, l, sum int
 	fmt.Scan(&n, &l)

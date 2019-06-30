@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+// https://atcoder.jp/contests/abc131/tasks/abc131_a
 func main() {
 	var s string
 	fmt.Scan(&s)
