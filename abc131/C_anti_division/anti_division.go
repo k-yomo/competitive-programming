@@ -8,7 +8,7 @@ import (
 func main() {
 	var a, b, c, d int
 	fmt.Scan(&a, &b, &c, &d)
-a
+	totalNum := b - a + 1
 	lcm := c * d / Gcd(c, d)
 	var cNum, dNum, eNum int
 	if a%c == 0 {
