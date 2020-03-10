@@ -1,4 +1,4 @@
-package utils
+package util
 
 func Keys(m map[string]bool) []string {
 	var ks []string
