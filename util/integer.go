@@ -47,3 +47,11 @@ func Factorial(n int, times int) (res int) {
 
 	return 1
 }
+
+func Pow64(x, y int64) int64 {
+	return int64(math.Pow(float64(x), float64(y)))
+}
+
+func Pow(x, y int) int {
+	return int(Pow64(int64(x), int64(y)))
+}

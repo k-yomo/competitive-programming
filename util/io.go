@@ -2,73 +2,90 @@ package util
 
 import (
 	"bufio"
+	"fmt"
 	"os"
 	"strconv"
 )
 
-func NewScanner() *bufio.Scanner {
+type IO struct {
+	scanner *bufio.Scanner
+	writer  *bufio.Writer
+}
+
+func NewIO() *IO {
+	return &IO{
+		scanner: newScanner(),
+		writer:  newWriter(),
+	}
+}
+
+func newScanner() *bufio.Scanner {
 	s := bufio.NewScanner(os.Stdin)
 	s.Buffer(make([]byte, 1000005), 1000005)
 	s.Split(bufio.ScanWords)
 	return s
 }
 
-func NewWriter() *bufio.Writer {
+func newWriter() *bufio.Writer {
 	return bufio.NewWriter(os.Stdout)
 }
 
-func ScanString(s *bufio.Scanner) string {
-	if !s.Scan() {
+func (io *IO) ScanString() string {
+	if !io.scanner.Scan() {
 		panic("scan string failed")
 	}
-	return s.Text()
+	return io.scanner.Text()
 }
 
-func ScanStrings(s *bufio.Scanner, n int) []string {
+func (io *IO) ScanStrings(n int) []string {
 	strs := make([]string, n)
 	for i := 0; i < n; i++ {
-		strs[i] = ScanString(s)
+		strs[i] = io.ScanString()
 	}
 	return strs
 }
 
-func ScanInt(s *bufio.Scanner) int {
-	return int(ScanInt64(s))
+func (io *IO) ScanInt() int {
+	return int(io.ScanInt64())
 }
 
-func ScanInts(s *bufio.Scanner, n int) []int {
+func (io *IO) ScanInts(n int) []int {
 	ints := make([]int, n)
 	for i := 0; i < n; i++ {
-		ints[i] = ScanInt(s)
+		ints[i] = io.ScanInt()
 	}
 	return ints
 }
 
-func Scan2DInts(s *bufio.Scanner, x, y int) [][]int {
+func (io *IO) Scan2DInts(x, y int) [][]int {
 	ints := make([][]int, y)
 	for i := 0; i < y; i++ {
-		ints[i] = ScanInts(s, x)
+		ints[i] = io.ScanInts(x)
 	}
 	return ints
 }
 
-func ScanInt64(s *bufio.Scanner) int64 {
-	i, err := strconv.ParseInt(ScanString(s), 10, 64)
+func (io *IO) ScanInt64() int64 {
+	i, err := strconv.ParseInt(io.ScanString(), 10, 64)
 	if err != nil {
 		panic(err)
 	}
 	return i
 }
 
-func ScanFloat64(s *bufio.Scanner) float64 {
-	i, _ := strconv.ParseFloat(ScanString(s), 64)
+func (io *IO) ScanFloat64() float64 {
+	i, _ := strconv.ParseFloat(io.ScanString(), 64)
 	return i
 }
 
-func ScanFloat64s(s *bufio.Scanner, n int) []float64 {
+func (io *IO) ScanFloat64s(n int) []float64 {
 	floats := make([]float64, n)
 	for i := 0; i < n; i++ {
-		floats[i] = ScanFloat64(s)
+		floats[i] = io.ScanFloat64()
 	}
 	return floats
+}
+
+func (io *IO) Println(s string) {
+	fmt.Fprintln(io.writer, s)
 }
