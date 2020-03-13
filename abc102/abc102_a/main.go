@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Multiple of 2 and N
-	fmt.Printf("Hello world")
+	var n int
+	fmt.Scan(&n)
+	if n%2 == 0 {
+		fmt.Println(n)
+	} else {
+		fmt.Println(n * 2)
+	}
 }

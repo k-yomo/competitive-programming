@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Happy Birthday!
-	fmt.Printf("Hello world")
+	var a, b int
+	fmt.Scan(&a, &b)
+	if a <= 8 && b <= 8 {
+		fmt.Println("Yay!")
+	} else {
+		fmt.Println(":(")
+	}
 }
