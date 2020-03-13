@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc072"
+  ContestURL = "https://atcoder.jp/contests/abc072"
+  TaskID = "abc072_b"
+  TaskName = "B - OddString"
+  TaskURL = "https://atcoder.jp/contests/abc072/tasks/abc072_b"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

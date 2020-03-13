@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc080"
+  ContestURL = "https://atcoder.jp/contests/abc080"
+  TaskID = "abc080_d"
+  TaskName = "D - Recording"
+  TaskURL = "https://atcoder.jp/contests/abc080/tasks/abc080_d"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

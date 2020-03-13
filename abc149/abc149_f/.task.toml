@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc149"
+  ContestURL = "https://atcoder.jp/contests/abc149"
+  TaskID = "abc149_f"
+  TaskName = "F - Surrounded Nodes"
+  TaskURL = "https://atcoder.jp/contests/abc149/tasks/abc149_f"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

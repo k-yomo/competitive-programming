@@ -1,0 +1,12 @@
+- in: |-
+    pot
+    top
+  exp: "YES"
+- in: |-
+    tab
+    bet
+  exp: "NO"
+- in: |-
+    eye
+    eel
+  exp: "NO"

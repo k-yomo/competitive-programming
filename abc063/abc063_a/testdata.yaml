@@ -1,0 +1,4 @@
+- in: 6 3
+  exp: "9"
+- in: 6 4
+  exp: error

@@ -1,0 +1,20 @@
+- in: |-
+    yx
+    axy
+  exp: "Yes"
+- in: |-
+    ratcode
+    atlas
+  exp: "Yes"
+- in: |-
+    cd
+    abc
+  exp: "No"
+- in: |-
+    w
+    ww
+  exp: "Yes"
+- in: |-
+    zzz
+    zzz
+  exp: "No"

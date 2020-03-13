@@ -1,0 +1,12 @@
+- in: |-
+    3
+    cbaa
+    daacc
+    acacac
+  exp: aac
+- in: |-
+    3
+    a
+    aa
+    b
+  exp: ""

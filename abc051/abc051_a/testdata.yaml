@@ -1,0 +1,6 @@
+- in: happy,newyear,enjoy
+  exp: happy newyear enjoy
+- in: haiku,atcoder,tasks
+  exp: haiku atcoder tasks
+- in: abcde,fghihgf,edcba
+  exp: abcde fghihgf edcba

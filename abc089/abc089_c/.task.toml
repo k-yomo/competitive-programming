@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc089"
+  ContestURL = "https://atcoder.jp/contests/abc089"
+  TaskID = "abc089_c"
+  TaskName = "C - March"
+  TaskURL = "https://atcoder.jp/contests/abc089/tasks/abc089_c"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

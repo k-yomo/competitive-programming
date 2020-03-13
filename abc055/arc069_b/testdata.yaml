@@ -1,0 +1,12 @@
+- in: |-
+    6
+    ooxoox
+  exp: SSSWWS
+- in: |-
+    3
+    oox
+  exp: "-1"
+- in: |-
+    10
+    oxooxoxoox
+  exp: SSWWSSSWWS

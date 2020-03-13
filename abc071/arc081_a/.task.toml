@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc071"
+  ContestURL = "https://atcoder.jp/contests/abc071"
+  TaskID = "arc081_a"
+  TaskName = "C - Make a Rectangle"
+  TaskURL = "https://atcoder.jp/contests/abc071/tasks/arc081_a"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

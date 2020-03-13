@@ -1,0 +1,12 @@
+- in: |-
+    10
+    aabbbbaaca
+  exp: "5"
+- in: |-
+    5
+    aaaaa
+  exp: "1"
+- in: |-
+    20
+    xxzaffeeeeddfkkkkllq
+  exp: "10"

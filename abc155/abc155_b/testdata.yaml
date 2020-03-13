@@ -1,0 +1,8 @@
+- in: |-
+    5
+    6 7 9 10 31
+  exp: APPROVED
+- in: |-
+    3
+    28 27 24
+  exp: DENIED

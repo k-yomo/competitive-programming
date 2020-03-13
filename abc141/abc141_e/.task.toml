@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc141"
+  ContestURL = "https://atcoder.jp/contests/abc141"
+  TaskID = "abc141_e"
+  TaskName = "E - Who Says a Pun?"
+  TaskURL = "https://atcoder.jp/contests/abc141/tasks/abc141_e"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

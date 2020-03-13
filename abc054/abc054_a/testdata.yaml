@@ -1,0 +1,6 @@
+- in: 8 6
+  exp: Alice
+- in: 1 1
+  exp: Draw
+- in: 13 1
+  exp: Bob

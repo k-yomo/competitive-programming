@@ -1,0 +1,10 @@
+- in: |-
+    ant
+    obe
+    rec
+  exp: abc
+- in: |-
+    edu
+    cat
+    ion
+  exp: ean

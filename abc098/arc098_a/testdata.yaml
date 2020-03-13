@@ -1,0 +1,12 @@
+- in: |-
+    5
+    WEEWW
+  exp: "1"
+- in: |-
+    12
+    WEWEWEEEWWWE
+  exp: "4"
+- in: |-
+    8
+    WWWWWEEE
+  exp: "3"

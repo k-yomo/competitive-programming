@@ -1,0 +1,12 @@
+- in: |-
+    6
+    abcabc
+  exp: "Yes"
+- in: |-
+    6
+    abcadc
+  exp: "No"
+- in: |-
+    1
+    z
+  exp: "No"

@@ -1,0 +1,24 @@
+- in: |-
+    FTFFTFFF
+    4 2
+  exp: "Yes"
+- in: |-
+    FTFFTFFF
+    -2 -2
+  exp: "Yes"
+- in: |-
+    FF
+    1 0
+  exp: "No"
+- in: |-
+    TF
+    1 0
+  exp: "No"
+- in: |-
+    FFTTFF
+    0 0
+  exp: "Yes"
+- in: |-
+    TTTT
+    1 0
+  exp: "No"

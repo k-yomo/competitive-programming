@@ -1,0 +1,12 @@
+- in: |-
+    2
+    ip cc
+  exp: icpc
+- in: |-
+    8
+    hmhmnknk uuuuuuuu
+  exp: humuhumunukunuku
+- in: |-
+    5
+    aaaaa aaaaa
+  exp: aaaaaaaaaa

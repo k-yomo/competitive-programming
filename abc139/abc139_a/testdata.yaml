@@ -1,0 +1,12 @@
+- in: |-
+    CSS
+    CSR
+  exp: "2"
+- in: |-
+    SSR
+    SSR
+  exp: "3"
+- in: |-
+    RRR
+    SSS
+  exp: "0"

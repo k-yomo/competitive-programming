@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc061"
+  ContestURL = "https://atcoder.jp/contests/abc061"
+  TaskID = "abc061_c"
+  TaskName = "C - Big Array"
+  TaskURL = "https://atcoder.jp/contests/abc061/tasks/abc061_c"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

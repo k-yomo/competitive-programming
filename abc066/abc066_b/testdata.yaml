@@ -1,0 +1,8 @@
+- in: abaababaab
+  exp: "6"
+- in: xxxx
+  exp: "2"
+- in: abcabcabcabc
+  exp: "6"
+- in: akasakaakasakasakaakas
+  exp: "14"

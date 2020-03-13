@@ -1,0 +1,8 @@
+- in: |-
+    xyz
+    abc
+  exp: xaybzc
+- in: |-
+    atcoderbeginnercontest
+    atcoderregularcontest
+  exp: aattccooddeerrbreeggiunlnaerrccoonntteesstt

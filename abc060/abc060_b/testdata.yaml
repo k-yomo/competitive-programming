@@ -1,0 +1,10 @@
+- in: 7 5 1
+  exp: "YES"
+- in: 2 2 1
+  exp: "NO"
+- in: 1 100 97
+  exp: "YES"
+- in: 40 98 58
+  exp: "YES"
+- in: 77 42 36
+  exp: "NO"

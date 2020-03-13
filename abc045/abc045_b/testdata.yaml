@@ -1,0 +1,10 @@
+- in: |-
+    aca
+    accc
+    ca
+  exp: A
+- in: |-
+    abcb
+    aacb
+    bccc
+  exp: C

@@ -1,0 +1,36 @@
+- in: |-
+    4
+    hoge
+    english
+    hoge
+    enigma
+  exp: "No"
+- in: |-
+    9
+    basic
+    c
+    cpp
+    php
+    python
+    nadesico
+    ocaml
+    lua
+    assembly
+  exp: "Yes"
+- in: |-
+    8
+    a
+    aa
+    aaa
+    aaaa
+    aaaaa
+    aaaaaa
+    aaa
+    aaaaaaa
+  exp: "No"
+- in: |-
+    3
+    abc
+    arc
+    agc
+  exp: "No"

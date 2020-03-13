@@ -1,0 +1,12 @@
+- in: |-
+    kyoto
+    tokyo
+  exp: "Yes"
+- in: |-
+    abc
+    arc
+  exp: "No"
+- in: |-
+    aaaaaaaaaaaaaaab
+    aaaaaaaaaaaaaaab
+  exp: "Yes"

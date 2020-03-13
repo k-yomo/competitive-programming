@@ -1,0 +1,15 @@
+- in: |-
+    3
+    aab
+    ccb
+  exp: "6"
+- in: |-
+    1
+    Z
+    Z
+  exp: "3"
+- in: |-
+    52
+    RvvttdWIyyPPQFFZZssffEEkkaSSDKqcibbeYrhAljCCGGJppHHn
+    RLLwwdWIxxNNQUUXXVVMMooBBaggDKqcimmeYrhAljOOTTJuuzzn
+  exp: "958681902"

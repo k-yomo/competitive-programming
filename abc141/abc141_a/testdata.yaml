@@ -1,0 +1,4 @@
+- in: Sunny
+  exp: Cloudy
+- in: Rainy
+  exp: Sunny

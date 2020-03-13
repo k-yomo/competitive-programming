@@ -1,0 +1,6 @@
+- in: QWERTYASDFZXCV
+  exp: "5"
+- in: ZABCZ
+  exp: "4"
+- in: HASFJGHOGAKZZFEGA
+  exp: "12"

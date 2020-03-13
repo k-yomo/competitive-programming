@@ -1,0 +1,6 @@
+- in: redcoder
+  exp: "1"
+- in: vvvvvv
+  exp: "0"
+- in: abcdabc
+  exp: "2"

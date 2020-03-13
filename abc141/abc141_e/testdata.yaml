@@ -1,0 +1,12 @@
+- in: |-
+    5
+    ababa
+  exp: "2"
+- in: |-
+    2
+    xy
+  exp: "0"
+- in: |-
+    13
+    strangeorange
+  exp: "5"

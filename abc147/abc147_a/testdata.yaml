@@ -1,0 +1,4 @@
+- in: 5 7 9
+  exp: win
+- in: 13 7 2
+  exp: bust

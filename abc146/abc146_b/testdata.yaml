@@ -1,0 +1,12 @@
+- in: |-
+    2
+    ABCXYZ
+  exp: CDEZAB
+- in: |-
+    0
+    ABCXYZ
+  exp: ABCXYZ
+- in: |-
+    13
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  exp: NOPQRSTUVWXYZABCDEFGHIJKLM

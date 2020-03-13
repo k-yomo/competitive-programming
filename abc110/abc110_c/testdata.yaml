@@ -1,0 +1,12 @@
+- in: |-
+    azzel
+    apple
+  exp: "Yes"
+- in: |-
+    chokudai
+    redcoder
+  exp: "No"
+- in: |-
+    abcdefghijklmnopqrstuvwxyz
+    ibyhqfrekavclxjstdwgpzmonu
+  exp: "Yes"

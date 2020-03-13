@@ -1,0 +1,50 @@
+- in: |-
+    3
+    apple
+    orange
+    apple
+    1
+    grape
+  exp: "2"
+- in: |-
+    3
+    apple
+    orange
+    apple
+    5
+    apple
+    apple
+    apple
+    apple
+    apple
+  exp: "1"
+- in: |-
+    1
+    voldemort
+    10
+    voldemort
+    voldemort
+    voldemort
+    voldemort
+    voldemort
+    voldemort
+    voldemort
+    voldemort
+    voldemort
+    voldemort
+  exp: "0"
+- in: |-
+    6
+    red
+    red
+    blue
+    yellow
+    yellow
+    red
+    5
+    red
+    red
+    yellow
+    green
+    blue
+  exp: "1"

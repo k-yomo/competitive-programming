@@ -1,0 +1,6 @@
+- in: a
+  exp: vowel
+- in: z
+  exp: consonant
+- in: s
+  exp: consonant

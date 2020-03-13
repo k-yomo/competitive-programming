@@ -1,0 +1,12 @@
+- in: |-
+    6
+    G W Y P Y W
+  exp: Four
+- in: |-
+    9
+    G W W G P W P G G
+  exp: Three
+- in: |-
+    8
+    P Y W G Y W Y Y
+  exp: Four

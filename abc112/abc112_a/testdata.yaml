@@ -1,0 +1,7 @@
+- in: "1"
+  exp: Hello World
+- in: |-
+    2
+    3
+    5
+  exp: "8"

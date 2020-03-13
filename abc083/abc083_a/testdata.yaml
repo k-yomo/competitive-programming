@@ -1,0 +1,6 @@
+- in: 3 8 7 1
+  exp: Left
+- in: 3 4 5 2
+  exp: Balanced
+- in: 1 7 6 4
+  exp: Right

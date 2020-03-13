@@ -1,0 +1,19 @@
+- in: |-
+    3
+    acornistnt
+    peanutbomb
+    constraint
+  exp: "1"
+- in: |-
+    2
+    oneplustwo
+    ninemodsix
+  exp: "0"
+- in: |-
+    5
+    abaaaaaaaa
+    oneplustwo
+    aaaaaaaaba
+    twoplusone
+    aaaabaaaaa
+  exp: "4"

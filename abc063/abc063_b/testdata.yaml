@@ -1,0 +1,6 @@
+- in: uncopyrightable
+  exp: "yes"
+- in: different
+  exp: "no"
+- in: "no"
+  exp: "yes"

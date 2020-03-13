@@ -1,0 +1,12 @@
+- in: |-
+    6
+    aabbca
+  exp: "2"
+- in: |-
+    10
+    aaaaaaaaaa
+  exp: "1"
+- in: |-
+    45
+    tgxgdqkyjzhyputjjtllptdfxocrylqfqjynmfbfucbir
+  exp: "9"

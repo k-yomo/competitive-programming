@@ -1,0 +1,6 @@
+- in: A B
+  exp: <
+- in: E C
+  exp: '>'
+- in: F F
+  exp: =

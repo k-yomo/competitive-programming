@@ -1,0 +1,8 @@
+- in: bac
+  exp: "Yes"
+- in: bab
+  exp: "No"
+- in: abc
+  exp: "Yes"
+- in: aaa
+  exp: "No"

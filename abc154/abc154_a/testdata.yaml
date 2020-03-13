@@ -1,0 +1,10 @@
+- in: |-
+    red blue
+    3 4
+    red
+  exp: 2 4
+- in: |-
+    red blue
+    5 5
+    blue
+  exp: 5 4

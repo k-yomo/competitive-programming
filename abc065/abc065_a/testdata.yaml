@@ -1,0 +1,6 @@
+- in: 4 3 6
+  exp: safe
+- in: 6 5 1
+  exp: delicious
+- in: 3 7 12
+  exp: dangerous

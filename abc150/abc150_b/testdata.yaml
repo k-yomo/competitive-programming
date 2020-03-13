@@ -1,0 +1,12 @@
+- in: |-
+    10
+    ZABCDBABCQ
+  exp: "2"
+- in: |-
+    19
+    THREEONEFOURONEFIVE
+  exp: "0"
+- in: |-
+    33
+    ABCCABCBABCCABACBCBBABCBCBCBCABCB
+  exp: "5"

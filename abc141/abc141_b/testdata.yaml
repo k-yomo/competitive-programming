@@ -1,0 +1,10 @@
+- in: RUDLUDR
+  exp: "Yes"
+- in: DULL
+  exp: "No"
+- in: UUUUUUUUUUUUUUU
+  exp: "Yes"
+- in: ULURU
+  exp: "No"
+- in: RDULULDURURLRDULRLR
+  exp: "Yes"

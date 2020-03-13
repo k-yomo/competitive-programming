@@ -1,0 +1,8 @@
+- in: rng gorilla apple
+  exp: "YES"
+- in: yakiniku unagi sushi
+  exp: "NO"
+- in: a a a
+  exp: "YES"
+- in: aaaaaaaaab aaaaaaaaaa aaaaaaaaab
+  exp: "NO"

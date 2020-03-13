@@ -1,0 +1,4 @@
+- in: 4 3 2
+  exp: "YES"
+- in: 2 3 4
+  exp: "NO"

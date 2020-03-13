@@ -1,0 +1,44 @@
+- in: |-
+    7
+    beat
+    vet
+    beet
+    bed
+    vet
+    bet
+    beet
+  exp: |-
+    beet
+    vet
+- in: |-
+    8
+    buffalo
+    buffalo
+    buffalo
+    buffalo
+    buffalo
+    buffalo
+    buffalo
+    buffalo
+  exp: buffalo
+- in: |-
+    7
+    bass
+    bass
+    kick
+    kick
+    bass
+    kick
+    kick
+  exp: kick
+- in: |-
+    4
+    ushi
+    tapu
+    nichia
+    kun
+  exp: |-
+    kun
+    nichia
+    tapu
+    ushi

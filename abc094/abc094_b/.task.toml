@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc094"
+  ContestURL = "https://atcoder.jp/contests/abc094"
+  TaskID = "abc094_b"
+  TaskName = "B - Toll Gates"
+  TaskURL = "https://atcoder.jp/contests/abc094/tasks/abc094_b"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

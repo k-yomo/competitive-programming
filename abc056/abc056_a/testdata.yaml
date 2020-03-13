@@ -1,0 +1,6 @@
+- in: H H
+  exp: H
+- in: D H
+  exp: D
+- in: D D
+  exp: H

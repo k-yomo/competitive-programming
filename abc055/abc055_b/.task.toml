@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc055"
+  ContestURL = "https://atcoder.jp/contests/abc055"
+  TaskID = "abc055_b"
+  TaskName = "B - Training Camp"
+  TaskURL = "https://atcoder.jp/contests/abc055/tasks/abc055_b"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

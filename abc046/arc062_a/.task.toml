@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc046"
+  ContestURL = "https://atcoder.jp/contests/abc046"
+  TaskID = "arc062_a"
+  TaskName = "C - AtCoDeer and Election Report"
+  TaskURL = "https://atcoder.jp/contests/abc046/tasks/arc062_a"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

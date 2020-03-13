@@ -1,0 +1,15 @@
+- in: |-
+    5 2
+    8 7 6
+    rsrpr
+  exp: "27"
+- in: |-
+    7 1
+    100 10 1
+    ssssppr
+  exp: "211"
+- in: |-
+    30 5
+    325 234 123
+    rspsspspsrpspsppprpsprpssprpsr
+  exp: "4996"

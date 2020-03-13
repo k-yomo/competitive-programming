@@ -1,0 +1,12 @@
+- in: |-
+    aba
+    4
+  exp: b
+- in: |-
+    atcoderandatcodeer
+    5
+  exp: andat
+- in: |-
+    z
+    1
+  exp: z
