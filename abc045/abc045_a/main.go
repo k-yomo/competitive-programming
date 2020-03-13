@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Trapezoids
-	fmt.Printf("Hello world")
+	var a, b, h int
+	fmt.Scan(&a, &b, &h)
+	fmt.Println((a + b) * h / 2)
 }

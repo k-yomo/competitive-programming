@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Restaurant
-	fmt.Printf("Hello world")
+	var n int
+	fmt.Scan(&n)
+	fmt.Println(800*n - n/15*200)
 }

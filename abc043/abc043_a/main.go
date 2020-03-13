@@ -3,6 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Children and Candies (ABC Edit)
-	fmt.Printf("Hello world")
+	var n, total int
+	fmt.Scan(&n)
+	for i := 1; i <= n; i++ {
+		total += i
+	}
+	fmt.Println(total)
 }

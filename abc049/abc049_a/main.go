@@ -1,8 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// Code for A - UOIAUAI
-	fmt.Printf("Hello world")
+	var c string
+	fmt.Scan(&c)
+	vowels := "aeiou"
+	if strings.Contains(vowels, c) {
+		fmt.Println("vowel")
+	} else {
+		fmt.Println("consonant")
+	}
 }

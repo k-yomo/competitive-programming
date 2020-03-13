@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Parking
-	fmt.Printf("Hello world")
+	var n, a, b int
+	fmt.Scan(&n, &a, &b)
+	if n*a < b {
+		fmt.Println(n * a)
+	} else {
+		fmt.Println(b)
+	}
 }

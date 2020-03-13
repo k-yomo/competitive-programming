@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// Code for A - Already 2018
-	fmt.Printf("Hello world")
+	var s string
+	fmt.Scan(&s)
+	fmt.Println(strings.Replace(s, "2017", "2018", 1))
 }

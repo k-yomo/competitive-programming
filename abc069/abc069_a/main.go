@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - K-City
-	fmt.Printf("Hello world")
+	var n, m int
+	fmt.Scan(&n, &m)
+	fmt.Println((n - 1) * (m - 1))
 }

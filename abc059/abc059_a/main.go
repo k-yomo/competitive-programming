@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// Code for A - Three-letter acronym
-	fmt.Printf("Hello world")
+	var a, b, c string
+	fmt.Scan(&a, &b, &c)
+	fmt.Println(strings.ToUpper(string(a[0])) + strings.ToUpper(string(b[0])) + strings.ToUpper(string(c[0])))
 }

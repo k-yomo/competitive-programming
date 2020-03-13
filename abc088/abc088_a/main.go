@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Infinite Coins
-	fmt.Printf("Hello world")
+	var n, a int
+	fmt.Scan(&n, &a)
+	if (n % 500) <= a {
+		fmt.Println("Yes")
+	} else {
+		fmt.Println("No")
+	}
 }

@@ -1,8 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// Code for B - Not Found
-	fmt.Printf("Hello world")
+	alphabet := "abcdefghijklmnopqrstuvwxyz"
+	var s string
+	fmt.Scan(&s)
+	for _, c := range s {
+		alphabet = strings.Replace(alphabet, string(c), "", 1)
+	}
+	if len(alphabet) == 0 {
+		fmt.Println("None")
+	} else {
+		fmt.Println(string(alphabet[0]))
+	}
 }

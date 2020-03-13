@@ -1,8 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// Code for A - abc of ABC
-	fmt.Printf("Hello world")
+	var s string
+	fmt.Scan(&s)
+	if strings.Contains(s, "a") && strings.Contains(s, "b") && strings.Contains(s, "c") {
+		fmt.Println("Yes")
+	} else {
+		fmt.Println("No")
+	}
 }

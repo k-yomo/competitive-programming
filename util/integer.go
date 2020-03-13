@@ -55,3 +55,12 @@ func Pow64(x, y int64) int64 {
 func Pow(x, y int) int {
 	return int(Pow64(int64(x), int64(y)))
 }
+
+func ContainsInt(s []int, e int) bool {
+	for _, a := range s {
+		if a == e {
+			return true
+		}
+	}
+	return false
+}

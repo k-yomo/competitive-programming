@@ -1,8 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+	"strings"
+)
 
 func main() {
-	// Code for A - September 9
-	fmt.Printf("Hello world")
+	var n int
+	fmt.Scan(&n)
+	if strings.Contains(strconv.Itoa(n), "9") {
+		fmt.Println("Yes")
+	} else {
+		fmt.Println("No")
+	}
 }

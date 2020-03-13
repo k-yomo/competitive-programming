@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc047"
+  ContestURL = "https://atcoder.jp/contests/abc047"
+  TaskID = "arc063_a"
+  TaskName = "C - 1D Reversi"
+  TaskURL = "https://atcoder.jp/contests/abc047/tasks/arc063_a"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

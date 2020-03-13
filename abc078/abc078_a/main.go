@@ -3,6 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - HEX
-	fmt.Printf("Hello world")
+	var a, b string
+	fmt.Scan(&a, &b)
+	if a > b {
+		fmt.Println(">")
+	} else if a < b {
+		fmt.Println("<")
+	} else {
+		fmt.Println("=")
+	}
 }

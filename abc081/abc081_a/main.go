@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// Code for A - Placing Marbles
-	fmt.Printf("Hello world")
+	var s string
+	fmt.Scan(&s)
+	fmt.Println(strings.Count(s, "1"))
 }

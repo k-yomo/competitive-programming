@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	// Code for A - Round Up the Mean
-	fmt.Printf("Hello world")
+	var a, b int64
+	fmt.Scan(&a, &b)
+	fmt.Println(math.Ceil(float64(a+b) / 2.0))
 }

@@ -1,8 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	// Code for A - Sandglass2
-	fmt.Printf("Hello world")
+	var x, t int
+	fmt.Scan(&x, &t)
+	if x-t > 0 {
+		fmt.Println(x - t)
+	} else {
+		fmt.Println(0)
+	}
 }

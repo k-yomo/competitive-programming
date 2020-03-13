@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Diagonal String
-	fmt.Printf("Hello world")
+	var a, b, c string
+	fmt.Scan(&a, &b, &c)
+	fmt.Println(fmt.Sprintf("%s%s%s", string(a[0]), string(b[1]), string(c[2])))
 }

@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Bichrome Cells
-	fmt.Printf("Hello world")
+	var n, a int
+	fmt.Scan(&n, &a)
+	fmt.Println(n*n - a)
 }

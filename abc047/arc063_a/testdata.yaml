@@ -1,0 +1,6 @@
+- in: BBBWW
+  exp: "1"
+- in: WWWWWW
+  exp: "0"
+- in: WBWBWBWBWB
+  exp: "9"

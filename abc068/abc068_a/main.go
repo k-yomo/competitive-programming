@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - ABCxxx
-	fmt.Printf("Hello world")
+	var n int
+	fmt.Scan(&n)
+	fmt.Println(fmt.Sprintf("ABC%d", n))
 }

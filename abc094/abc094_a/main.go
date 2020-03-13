@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Cats and Dogs
-	fmt.Printf("Hello world")
+	var a, b, x int
+	fmt.Scan(&a, &b, &x)
+	if x >= a && x <= a+b {
+		fmt.Println("YES")
+	} else {
+		fmt.Println("NO")
+	}
 }

@@ -1,8 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
-	// Code for A - ringring
-	fmt.Printf("Hello world")
+	var a, b, c int
+	fmt.Scan(&a, &b, &c)
+	bells := []int{a, b, c}
+	sort.Ints(bells)
+	fmt.Println(bells[0] + bells[1])
 }

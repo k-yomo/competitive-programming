@@ -3,6 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Tak and Hotels (ABC Edit)
-	fmt.Printf("Hello world")
+	var n, k, x, y, total int
+	fmt.Scan(&n, &k, &x, &y)
+	for i := 0; i < n; i++ {
+		if i < k {
+			total += x
+			continue
+		}
+		total += y
+	}
+	fmt.Println(total)
 }

@@ -3,6 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Libra
-	fmt.Printf("Hello world")
+	var a, b, c, d int
+	fmt.Scan(&a, &b, &c, &d)
+	if a+b > c+d {
+		fmt.Println("Left")
+	} else if a+b < c+d {
+		fmt.Println("Right")
+	} else {
+		fmt.Println("Balanced")
+	}
 }
