@@ -1,4 +1,4 @@
-package util
+package main
 
 import (
 	"bufio"
@@ -7,6 +7,46 @@ import (
 	"strconv"
 	"strings"
 )
+
+var reached [][]bool
+
+func main() {
+	io, flush := NewIO()
+	defer flush()
+	h, w := io.ScanInt(), io.ScanInt()
+	reached = PrepareEmpty2DBoolArray(h, w)
+	maze := io.Scan2DGraph(h)
+
+	var sy, sx, gy, gx int
+	for y := 0; y < h; y++ {
+		for x := 0; x < w; x++ {
+			if maze[y][x] == "s" {
+				sy, sx = y, x
+			}
+			if maze[y][x] == "g" {
+				gy, gx = y, x
+			}
+		}
+	}
+
+	search(maze, sy, sx)
+	if reached[gy][gx] {
+		io.Println("Yes")
+	} else {
+		io.Println("No")
+	}
+}
+
+func search(maze [][]string, y, x int) {
+	if y < 0 || x < 0 || y > len(maze)-1 || x > len(maze[0])-1 || maze[y][x] == "#" || reached[y][x] {
+		return
+	}
+	reached[y][x] = true
+	search(maze, y+1, x)
+	search(maze, y, x+1)
+	search(maze, y-1, x)
+	search(maze, y, x-1)
+}
 
 type IO struct {
 	scanner *bufio.Scanner
@@ -106,4 +146,20 @@ func (io *IO) ScanFloat64s(n int) []float64 {
 
 func (io *IO) Println(s string) {
 	fmt.Fprintln(io.writer, s)
+}
+
+func PrepareEmptyBoolArray(n int) []bool {
+	arr := make([]bool, n)
+	for i := 0; i < n; i++ {
+		arr[i] = false
+	}
+	return arr
+}
+
+func PrepareEmpty2DBoolArray(y, x int) [][]bool {
+	arr := make([][]bool, y)
+	for i := 0; i < y; i++ {
+		arr[i] = PrepareEmptyBoolArray(x)
+	}
+	return arr
 }
