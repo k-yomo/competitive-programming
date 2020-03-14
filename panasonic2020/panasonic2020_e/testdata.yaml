@@ -1,0 +1,10 @@
+- in: |-
+    a?c
+    der
+    cod
+  exp: "7"
+- in: |-
+    atcoder
+    atcoder
+    ???????
+  exp: "7"

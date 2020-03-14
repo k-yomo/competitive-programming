@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc120"
+  ContestURL = "https://atcoder.jp/contests/abc120"
+  TaskID = "abc120_b"
+  TaskName = "B - K-th Common Divisor"
+  TaskURL = "https://atcoder.jp/contests/abc120/tasks/abc120_b"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"
