@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - AtCoder Beginner Contest 999
-	fmt.Printf("Hello world")
+	var n int
+	fmt.Scan(&n)
+	fmt.Println(1110 - n)
 }

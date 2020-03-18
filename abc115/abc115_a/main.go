@@ -1,8 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// Code for A - Christmas Eve Eve Eve
-	fmt.Printf("Hello world")
+	var d int
+	fmt.Scan(&d)
+	ans := []string{"Christmas"}
+	for i := 0; i < 25 - d; i++ {
+		ans = append(ans, "Eve")
+	}
+	fmt.Println(strings.Join(ans, " "))
 }

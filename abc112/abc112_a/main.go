@@ -3,6 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Programming Education
-	fmt.Printf("Hello world")
+	var n int
+	fmt.Scan(&n)
+	if n == 1 {
+		fmt.Println("Hello World")
+	} else {
+		var a, b int
+		fmt.Scan(&a, &b)
+		fmt.Println(a+b)
+	}
 }

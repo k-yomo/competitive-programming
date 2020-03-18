@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Entrance Examination
-	fmt.Printf("Hello world")
+	var t, x float64
+	fmt.Scan(&t, &x)
+	fmt.Println(t/x)
 }

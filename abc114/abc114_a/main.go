@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - 753
-	fmt.Printf("Hello world")
+	var x int
+	fmt.Scan(&x)
+	if x == 3 || x == 5 || x == 7 {
+		fmt.Println("YES")
+	} else {
+		fmt.Println("NO")
+	}
 }

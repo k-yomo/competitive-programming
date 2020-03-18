@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Pair
-	fmt.Printf("Hello world")
+	var k int
+	fmt.Scan(&k)
+	fmt.Println(k/2 * ((k+1)/2))
 }
