@@ -25,7 +25,7 @@ func PrepareEmptyIntArray(n int) []int {
 }
 
 func PrepareEmpty2DintArray(x, y int) [][]int {
-	arr := make([][]int, y, x)
+	arr := make([][]int, y)
 	for i := 0; i < y; i++ {
 		arr[i] = PrepareEmptyIntArray(x)
 	}

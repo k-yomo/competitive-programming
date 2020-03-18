@@ -1,12 +1,68 @@
-package util
+package main
 
 import (
 	"bufio"
 	"fmt"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 )
+
+func main() {
+	io, flush := NewIO()
+	defer flush()
+	n, m, p, q, r := io.ScanInt(), io.ScanInt(), io.ScanInt(), io.ScanInt(), io.ScanInt()
+	chocoHappiness := PrepareEmpty2DintArray(n, m)
+	for i := 0; i < r; i++ {
+		g, b, h := io.ScanInt()-1, io.ScanInt()-1, io.ScanInt()
+		chocoHappiness[g][b] += h
+	}
+	maxHappiness := 0
+	for i := 1<<uint(p) - 1; i < 1<<uint(n); i = NextCmb(i) {
+		happiness := 0
+		sum := make([]int, m)
+		for g := 0; g < n; g++ {
+			if i>>uint(g)&1 == 0 {
+				continue
+			}
+			for b := 0; b < m; b++ {
+				sum[b] += chocoHappiness[g][b]
+			}
+		}
+		sort.Ints(sum)
+		for j := 0; j < q; j++ {
+			happiness += sum[m-1-j]
+		}
+		if maxHappiness < happiness {
+			maxHappiness = happiness
+		}
+	}
+	io.Println(maxHappiness)
+}
+
+func NextCmb(bits int) int {
+	lowest := bits & -bits
+	newBits := bits + lowest
+	newBits |= ((bits & ^newBits) / lowest) >> 1
+	return newBits
+}
+
+func PrepareEmptyIntArray(n int) []int {
+	arr := make([]int, n)
+	for i := 0; i < n; i++ {
+		arr[i] = 0
+	}
+	return arr
+}
+
+func PrepareEmpty2DintArray(y, x int) [][]int {
+	arr := make([][]int, y)
+	for i := 0; i < y; i++ {
+		arr[i] = PrepareEmptyIntArray(x)
+	}
+	return arr
+}
 
 type IO struct {
 	scanner *bufio.Scanner
@@ -104,6 +160,6 @@ func (io *IO) ScanFloat64s(n int) []float64 {
 	return floats
 }
 
-func (io *IO) Println(s string) {
-	fmt.Fprintln(io.writer, s)
+func (io *IO) Println(a ...interface{}) {
+	fmt.Fprintln(io.writer, a...)
 }
