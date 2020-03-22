@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Duplex Printing
-	fmt.Printf("Hello world")
+	var n int
+	fmt.Scan(&n)
+	fmt.Println((n + 1) / 2)
 }

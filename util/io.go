@@ -32,6 +32,13 @@ func newWriter() *bufio.Writer {
 	return bufio.NewWriter(os.Stdout)
 }
 
+func (io *IO) ScanBytes() []byte {
+	if !io.scanner.Scan() {
+		panic("scan string failed")
+	}
+	return io.scanner.Bytes()
+}
+
 func (io *IO) ScanString() string {
 	if !io.scanner.Scan() {
 		panic("scan string failed")
@@ -104,6 +111,7 @@ func (io *IO) ScanFloat64s(n int) []float64 {
 	return floats
 }
 
-func (io *IO) Println(s string) {
-	fmt.Fprintln(io.writer, s)
+func (io *IO) Println(a ...interface{}) {
+	fmt.Fprintln(io.writer, a...)
 }
+

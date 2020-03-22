@@ -4,6 +4,8 @@ import (
 	"math"
 )
 
+const Mod = 1000000007
+
 func AbsInt(n1 int, n2 int) int {
 	return int(math.Abs(float64(n1 - n2)))
 }

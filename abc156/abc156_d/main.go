@@ -2,7 +2,13 @@ package main
 
 import "fmt"
 
+
+const Mod = 1000000007
+
 func main() {
-	// Code for D - Bouquet
-	fmt.Printf("Hello world")
+	var n, a, b int
+	fmt.Scan(&n, &a, &b)
+	for i := 1; i < n; i++ {
+
+	}
 }
