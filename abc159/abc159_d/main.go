@@ -21,36 +21,13 @@ func main() {
 	combCountMap := map[int]int{}
 	var totalCombCount int
 	for _, count := range numCountMap {
-		combCount := CombCount(count, 2)
+		combCount := count * (count-1) / 2
 		combCountMap[count] = combCount
 		totalCombCount += combCount
 	}
 	for _, num := range nums {
 		io.Println(totalCombCount - (numCountMap[num] - 1))
 	}
-}
-
-func CombCount(left int, right int) int {
-	rightFac := Factorial(right, right)
-	if rightFac <= 0 {
-		return 0
-	}
-	return Factorial(left, right) / rightFac
-}
-
-func Factorial(n int, times int) (res int) {
-	facts := make([]int, n+1)
-	if facts[n] != 0 {
-		res = facts[n]
-		return res
-	}
-
-	if n > 0 && times > 0 {
-		res = n * Factorial(n-1, times-1)
-		return res
-	}
-
-	return 1
 }
 
 type IO struct {
