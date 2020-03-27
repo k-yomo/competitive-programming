@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Blackjack
-	fmt.Printf("Hello world")
+	var a1, a2, a3 int
+	fmt.Scan(&a1, &a2, &a3)
+	if a1+a2+a3 > 21 {
+		fmt.Println("bust")
+	} else {
+		fmt.Println("win")
+	}
 }

@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - 9x9
-	fmt.Printf("Hello world")
+	var a,b int
+	fmt.Scan(&a, &b)
+	if a <= 9 && b <= 9 {
+		fmt.Println(a*b)
+	} else {
+		fmt.Println(-1)
+	}
 }

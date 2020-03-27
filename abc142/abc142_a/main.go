@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Odds of Oddness
-	fmt.Printf("Hello world")
+	var n float64
+	fmt.Scan(&n)
+	fmt.Println(float64((int(n)+1)/2) / n)
 }

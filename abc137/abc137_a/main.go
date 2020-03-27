@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	// Code for A - +-x
-	fmt.Printf("Hello world")
+	var a, b float64
+	fmt.Scan(&a, &b)
+	fmt.Println(int(math.Max(a+b, math.Max(a-b, a*b))))
 }

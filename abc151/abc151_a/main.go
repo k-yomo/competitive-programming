@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Next Alphabet
-	fmt.Printf("Hello world")
+	var c string
+	fmt.Scan(&c)
+	fmt.Printf("%c\n", []rune(c)[0]+1)
 }

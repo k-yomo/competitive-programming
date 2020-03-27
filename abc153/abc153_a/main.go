@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Serval vs Monster
-	fmt.Printf("Hello world")
+	var h, a int
+	fmt.Scan(&h, &a)
+	if h % a == 0 {
+		fmt.Println(h/a)
+	} else {
+		fmt.Println(h/a+1)
+	}
 }

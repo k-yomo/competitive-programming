@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - 500 Yen Coins
-	fmt.Printf("Hello world")
+	var k, x int
+	fmt.Scan(&k, &x)
+	if k*500 >= x {
+		fmt.Println("Yes")
+	} else {
+		fmt.Println("No")
+	}
 }

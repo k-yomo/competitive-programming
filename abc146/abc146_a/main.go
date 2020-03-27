@@ -3,6 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Can't Wait for Holiday
-	fmt.Printf("Hello world")
+	var s string
+	fmt.Scan(&s)
+	dayMapping := map[string]int{
+		"SUN": 7,
+		"MON": 6,
+		"TUE": 5,
+		"WED": 4,
+		"THU": 3,
+		"FRI": 2,
+		"SAT": 1,
+	}
+	fmt.Println(dayMapping[s])
 }

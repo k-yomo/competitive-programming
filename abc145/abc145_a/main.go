@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Circle
-	fmt.Printf("Hello world")
+	var r int
+	fmt.Scan(&r)
+	fmt.Println(r * r)
 }

@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// Code for A - Beginner
-	fmt.Printf("Hello world")
+	var n, r int
+	fmt.Scan(&n, &r)
+	if n >= 10 {
+		fmt.Println(r)
+	} else {
+		fmt.Println(r + (10-n) * 100)
+	}
 }
