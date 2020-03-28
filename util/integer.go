@@ -94,12 +94,18 @@ func ModPow(a, n int) int {
 	return v
 }
 
-func Pow64(x, y int64) int64 {
-	return int64(math.Pow(float64(x), float64(y)))
-}
-
-func Pow(x, y int) int {
-	return int(Pow64(int64(x), int64(y)))
+func Pow(a, n int) int {
+	if n == 0 {
+		return 1
+	}
+	v := 1
+	for p := n; p > 0; p >>= 1 {
+		if p&1 == 1 {
+			v = v * a
+		}
+		a = a * a
+	}
+	return v
 }
 
 func ContainsInt(s []int, e int) bool {

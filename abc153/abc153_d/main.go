@@ -1,8 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	// Code for D - Caracal vs Monster
-	fmt.Printf("Hello world")
+	var h int
+	fmt.Scan(&h)
+	fmt.Println(count(h))
+}
+
+func count(h int) int {
+	if h == 1 {
+		return 1
+	}
+	return 1 + 2*count(h/2)
 }

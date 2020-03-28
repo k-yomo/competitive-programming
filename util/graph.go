@@ -1,5 +1,7 @@
 package util
 
+import "math"
+
 func Surroundings(h, w, y, x int) [][]int {
 	surroundingDiffs := [][]int{{1, 0}, {1, 1}, {0, 1}, {-1, 1}, {- 1, 0}, {-1, -1}, {0, -1}, {1, -1}}
 	var surroundings [][]int
@@ -14,3 +16,14 @@ func Surroundings(h, w, y, x int) [][]int {
 	return surroundings
 }
 
+var graph [][]int
+
+func WarshalFloyd(n int) {
+	for k := 0; k < n; k++ {
+		for i := 0; i < n; i++ {
+			for j := 0; j < n; j++ {
+				graph[i][j] = int(math.Min(float64(graph[i][j]), float64(graph[i][k]+graph[k][j])))
+			}
+		}
+	}
+}
