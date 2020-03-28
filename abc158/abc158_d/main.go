@@ -26,9 +26,10 @@ func main() {
 		if f == 1 && reversed || f == 2 && !reversed {
 			tail = append(tail, c...)
 		} else {
-			head = append(c, head...)
+			head = append(head, c...)
 		}
 	}
+	ReverseBytes(head)
 	ans := append(head, append(orig, tail...)...)
 	if reversed {
 		ReverseBytes(ans)
@@ -63,7 +64,7 @@ func NewIO() (*IO, func()) {
 
 func newScanner() *bufio.Scanner {
 	s := bufio.NewScanner(os.Stdin)
-	s.Buffer(make([]byte, 1000005), 1000005)
+	s.Buffer(make([]byte, 10000000), 10000000)
 	s.Split(bufio.ScanWords)
 	return s
 }

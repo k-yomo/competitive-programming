@@ -23,7 +23,7 @@ func NewIO() (*IO, func()) {
 
 func newScanner() *bufio.Scanner {
 	s := bufio.NewScanner(os.Stdin)
-	s.Buffer(make([]byte, 1000005), 1000005)
+	s.Buffer(make([]byte, 10000000), 10000000)
 	s.Split(bufio.ScanWords)
 	return s
 }

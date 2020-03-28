@@ -23,6 +23,7 @@ func main() {
 		happiness := 0
 		sum := make([]int, m)
 		for g := 0; g < n; g++ {
+			// skip if the girl is not included in the group
 			if i>>uint(g)&1 == 0 {
 				continue
 			}

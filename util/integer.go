@@ -25,7 +25,23 @@ func Lcm(x, y int) int {
 	return x * y / Gcd(x, y)
 }
 
+func NextCmb(bits int) int {
+	lowest := bits & -bits
+	newBits := bits + lowest
+	newBits |= ((bits & ^newBits) / lowest) >> 1
+	return newBits
+}
+
 // CombCount returns combination count(left C right)
+// for i := 1<<uint(p) - 1; i < 1<<uint(n); i = NextCmb(i) {
+// 	happiness := 0
+// 	sum := make([]int, m)
+// 	for g := 0; g < n; g++ {
+// 	// skip if the girl is not included in the group
+// 	if i>>uint(g)&1 == 0 {
+// 		continue
+// 	}
+// }
 func CombCount(left int, right int) int {
 	rightFac := Factorial(right, right)
 	if rightFac <= 0 {
@@ -48,6 +64,34 @@ func Factorial(n int, times int) (res int) {
 	}
 
 	return 1
+}
+
+func CombMod(left, right int) int {
+	if right == 0 {
+		return 1
+	}
+	v := left
+	div := right
+	for i := 1; i < right; i++ {
+		v = v * (left - i) % Mod
+		div = div * (right - i) % Mod
+	}
+	div = ModPow(div, Mod-2)
+	return v * div % Mod
+}
+
+func ModPow(a, n int) int {
+	if n == 0 {
+		return 1
+	}
+	v := 1
+	for p := n; p > 0; p >>= 1 {
+		if p&1 == 1 {
+			v = v * a % Mod
+		}
+		a = a * a % Mod
+	}
+	return v
 }
 
 func Pow64(x, y int64) int64 {
