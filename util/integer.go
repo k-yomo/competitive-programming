@@ -6,6 +6,20 @@ import (
 
 const Mod = 1000000007
 
+func Sum(nums ...int) (sum int) {
+	for _, n := range nums {
+		sum += n
+	}
+	return sum
+}
+
+func Min(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
 func AbsInt(n1 int, n2 int) int {
 	return int(math.Abs(float64(n1 - n2)))
 }
