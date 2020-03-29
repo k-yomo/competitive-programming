@@ -1,8 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// Code for B - Strings with the Same Length
-	fmt.Printf("Hello world")
+	var n int
+	var s, t string
+	fmt.Scan(&n, &s, &t)
+	var newChars []string
+	for i := 0; i < n; i++ {
+		newChars = append(newChars, string(s[i]))
+		newChars = append(newChars, string(t[i]))
+	}
+	fmt.Println(strings.Join(newChars, ""))
 }

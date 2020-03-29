@@ -130,3 +130,4 @@ func (io *IO) ScanFloat64s(n int) []float64 {
 func (io *IO) Println(a ...interface{}) {
 	fmt.Fprintln(io.writer, a...)
 }
+
