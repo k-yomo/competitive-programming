@@ -13,7 +13,7 @@ func PrepareEmptyBoolArray(n int) []bool {
 	return arr
 }
 
-func PrepareEmpty2DBoolArray(x, y int) [][]bool {
+func PrepareEmpty2DBoolArray(y, x int) [][]bool {
 	arr := make([][]bool, y, x)
 	for i := 0; i < y; i++ {
 		arr[i] = PrepareEmptyBoolArray(x)

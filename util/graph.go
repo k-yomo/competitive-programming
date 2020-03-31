@@ -2,6 +2,19 @@ package util
 
 import "math"
 
+var reached [][]bool
+
+func Search(maze [][]string, y, x int) {
+	if y < 0 || x < 0 || y > len(maze)-1 || x > len(maze[0])-1 || maze[y][x] == "#" || reached[y][x] {
+		return
+	}
+	reached[y][x] = true
+	Search(maze, y+1, x)
+	Search(maze, y, x+1)
+	Search(maze, y-1, x)
+	Search(maze, y, x-1)
+}
+
 func Surroundings(h, w, y, x int) [][]int {
 	surroundingDiffs := [][]int{{1, 0}, {1, 1}, {0, 1}, {-1, 1}, {- 1, 0}, {-1, -1}, {0, -1}, {1, -1}}
 	var surroundings [][]int
