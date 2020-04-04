@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc161"
+  ContestURL = "https://atcoder.jp/contests/abc161"
+  TaskID = "abc161_f"
+  TaskName = "F - Division or Substraction"
+  TaskURL = "https://atcoder.jp/contests/abc161/tasks/abc161_f"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"
