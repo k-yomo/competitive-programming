@@ -27,7 +27,7 @@ func Max(a, b int) int {
 	return b
 }
 
-func AbsInt(n1 int, n2 int) int {
+func AbsDiff(n1 int, n2 int) int {
 	return int(math.Abs(float64(n1 - n2)))
 }
 
