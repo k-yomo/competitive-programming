@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc166"
+  ContestURL = "https://atcoder.jp/contests/abc166"
+  TaskID = "abc166_e"
+  TaskName = "E - This Message Will Self-Destruct in 5s"
+  TaskURL = "https://atcoder.jp/contests/abc166/tasks/abc166_e"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.14"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"
