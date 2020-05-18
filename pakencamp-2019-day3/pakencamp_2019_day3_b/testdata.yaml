@@ -1,0 +1,26 @@
+- in: |-
+    1
+    black
+  exp: black
+- in: |-
+    7
+    black
+    white
+    white
+    white
+    white
+    white
+    black
+  exp: white
+- in: |-
+    9
+    black
+    black
+    black
+    black
+    black
+    black
+    black
+    black
+    black
+  exp: black

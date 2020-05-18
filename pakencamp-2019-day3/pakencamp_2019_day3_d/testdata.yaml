@@ -1,0 +1,32 @@
+- in: |-
+    1
+    B
+    R
+    #
+    W
+    B
+  exp: "3"
+- in: |-
+    3
+    WWR
+    #RW
+    BW#
+    ##B
+    RBR
+  exp: "10"
+- in: |-
+    8
+    RRRRRRRR
+    ########
+    BBBBBBBB
+    RRRRRRRR
+    WWWWWWWW
+  exp: "28"
+- in: |-
+    7
+    BR#WB#R
+    RWW#WRB
+    ##WBR#W
+    WB#B#RW
+    BRW##BB
+  exp: "21"
