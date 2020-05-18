@@ -74,6 +74,18 @@ func (io *IO) ScanInt() int {
 	return int(io.ScanInt64())
 }
 
+func (io *IO) ScanInt2() (int, int) {
+	return int(io.ScanInt64()), int(io.ScanInt64())
+}
+
+func (io *IO) ScanInt3() (int, int, int) {
+	return int(io.ScanInt64()), int(io.ScanInt64()), int(io.ScanInt64())
+}
+
+func (io *IO) ScanInt4() (int, int, int, int) {
+	return int(io.ScanInt64()), int(io.ScanInt64()), int(io.ScanInt64()), int(io.ScanInt64())
+}
+
 func (io *IO) ScanInts(n int) []int {
 	ints := make([]int, n)
 	for i := 0; i < n; i++ {
