@@ -1,0 +1,34 @@
+- in: |-
+    5 5
+    xooxx
+    xoxxo
+    xxoox
+    ooxoo
+    xoxxx
+  exp: Possible
+- in: |-
+    2 9
+    oxxxxoxxo
+    oxoxxoxxo
+  exp: Possible
+- in: |-
+    9 25
+    xxxxxxxxxxxxxxxxxxxxxxxxx
+    xxoooxxxoooxxooooxxxoooxx
+    xoxxxoxoxxxoxoxxxoxoxxxox
+    xoxxxxxoxxxoxoxxxoxoxxxxx
+    xxoooxxxoooxxooooxxoxxxxx
+    xxxxxoxoxxxoxoxxxxxoxxxxx
+    xoxxxoxoxxxoxoxxxxxoxxxox
+    xxoooxxxoooxxoxxxxxxoooxx
+    xxxxxxxxxxxxxxxxxxxxxxxxx
+  exp: Impossible
+- in: |-
+    6 6
+    oxxxxo
+    xoooxx
+    xoooox
+    xoooox
+    xxooxx
+    oxxxxo
+  exp: Impossible

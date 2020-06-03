@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "s8pc-6"
+  ContestURL = "https://atcoder.jp/contests/s8pc-6"
+  TaskID = "s8pc_6_h"
+  TaskName = "H - Percepts of AtCoder 2"
+  TaskURL = "https://atcoder.jp/contests/s8pc-6/tasks/s8pc_6_h"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"
