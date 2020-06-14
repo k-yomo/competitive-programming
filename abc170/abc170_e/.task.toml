@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc170"
+  ContestURL = "https://atcoder.jp/contests/abc170"
+  TaskID = "abc170_e"
+  TaskName = "E - Smart Infants"
+  TaskURL = "https://atcoder.jp/contests/abc170/tasks/abc170_e"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.6"
+  Key = "go"
+  Language = "Go (1.6)"
+  LanguageCode = "3013"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

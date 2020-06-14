@@ -1,0 +1,6 @@
+- in: 3 8
+  exp: "Yes"
+- in: 2 100
+  exp: "No"
+- in: 1 2
+  exp: "Yes"
