@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -12,12 +13,60 @@ func main() {
 	io, flush := NewIO()
 	defer flush()
 
-	n, m, q := io.ScanInt3()
-	fmt.Println(n, m, q)
-	var possibleNums []int
-	for  {
+	n := io.ScanInt()
+	taroCards := io.ScanInts(n)
+	sort.Ints(taroCards)
 
+	var hanakoCards []int
+	curCard := 1
+	for _, card := range taroCards {
+		for curCard < card {
+			hanakoCards = append(hanakoCards, curCard)
+			curCard++
+		}
+		curCard++
 	}
+	for i := curCard; i <= 2*n; i++ {
+		hanakoCards = append(hanakoCards, i)
+	}
+
+	sort.Ints(hanakoCards)
+
+	curCard = taroCards[0]
+	taroCards = taroCards[1:]
+	taroTurn := false
+
+	for len(taroCards) > 0 && len(hanakoCards) > 0 {
+		var found bool
+		if taroTurn {
+			for i, card := range taroCards {
+				if card >= curCard {
+					curCard = card
+					taroCards = append(taroCards[:i], taroCards[i+1:]...)
+					found = true
+					break
+				}
+			}
+			if !found {
+				curCard = 0
+			}
+		} else {
+			for i, card := range hanakoCards {
+				if card >= curCard {
+					curCard = card
+					hanakoCards = append(hanakoCards[:i], hanakoCards[i+1:]...)
+					found = true
+					break
+				}
+			}
+			if !found {
+				curCard = 0
+			}
+		}
+		taroTurn = !taroTurn
+	}
+	fmt.Println(len(hanakoCards))
+	fmt.Println(len(taroCards))
 }
 
 type IO struct {
@@ -138,4 +187,3 @@ func (io *IO) ScanFloat64s(n int) []float64 {
 func (io *IO) Println(a ...interface{}) {
 	fmt.Fprintln(io.writer, a...)
 }
-

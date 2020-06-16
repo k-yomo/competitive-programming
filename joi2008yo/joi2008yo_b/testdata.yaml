@@ -1,0 +1,12 @@
+- in: JOIJOI
+  exp: |-
+    2
+    0
+- in: JOIOIOIOI
+  exp: |-
+    1
+    3
+- in: JOIOIJOINXNXJIOIOIOJ
+  exp: |-
+    2
+    3

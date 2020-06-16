@@ -12,11 +12,30 @@ func main() {
 	io, flush := NewIO()
 	defer flush()
 
-	n, m, q := io.ScanInt3()
-	fmt.Println(n, m, q)
-	var possibleNums []int
-	for  {
+	m := io.ScanInt()
+	expectedSigns := io.Scan2DInts(m, 2)
+	n := io.ScanInt()
+	existedSigns := io.Scan2DInts(n, 2)
 
+	existedSignMap := map[string]bool{}
+	for _, existedSign := range existedSigns {
+		existedSignMap[fmt.Sprintf("%d,%d", existedSign[0], existedSign[1])] = true
+	}
+
+	sign := expectedSigns[0]
+	for _, existedSign := range existedSigns {
+		xMove := existedSign[0] - sign[0]
+		yMove := existedSign[1] - sign[1]
+		var isNotMatched bool
+		for _, sign := range expectedSigns[1:] {
+			if !existedSignMap[fmt.Sprintf("%d,%d", sign[0]+xMove, sign[1]+yMove)] {
+				isNotMatched = true
+				break
+			}
+		}
+		if !isNotMatched {
+			fmt.Println(xMove, yMove)
+		}
 	}
 }
 
@@ -138,4 +157,3 @@ func (io *IO) ScanFloat64s(n int) []float64 {
 func (io *IO) Println(a ...interface{}) {
 	fmt.Fprintln(io.writer, a...)
 }
-
