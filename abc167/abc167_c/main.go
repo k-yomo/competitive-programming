@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"math"
 	"os"
 	"strconv"
 	"strings"
@@ -12,6 +13,53 @@ func main() {
 	io, flush := NewIO()
 	defer flush()
 	n, m, x := io.ScanInt(), io.ScanInt(), io.ScanInt()
+
+	var possibleCombinations [][]int
+	for bit := 0; bit < (1 << uint(n)); bit++ {
+		var comb []int
+		for j := 0; j < n; j++ {
+			if (bit>>uint(j))&1 == 1 {
+				comb = append(comb, j+1)
+			}
+		}
+		possibleCombinations = append(possibleCombinations, comb)
+	}
+	prices :=  make([]int, n)
+	bookExpMap := map[int][]int{}
+	for i := 0; i < n; i++ {
+		prices[i] = io.ScanInt()
+		bookExpMap[i] = io.ScanInts(m)
+	}
+
+	originalMinPrice := int(math.Pow10(7))
+	minPrice := originalMinPrice
+	for _, comb := range possibleCombinations {
+		exps := make([]int, m)
+		var price int
+		for _, book := range comb {
+			bookIndex := book - 1
+			price += prices[bookIndex]
+			for i, exp := range bookExpMap[bookIndex] {
+				exps[i] += exp
+			}
+		}
+
+		ok := true
+		for _, exp := range exps {
+			if exp < x {
+				ok = false
+			}
+		}
+
+		if ok && price < minPrice {
+			minPrice = price
+		}
+	}
+	if minPrice == originalMinPrice {
+		fmt.Println(-1)
+	} else {
+		fmt.Println(minPrice)
+	}
 }
 
 type IO struct {
