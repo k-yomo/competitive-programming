@@ -1,0 +1,8 @@
+- in: "3776"
+  exp: Bad
+- in: "8080"
+  exp: Good
+- in: "1333"
+  exp: Bad
+- in: "0024"
+  exp: Bad
