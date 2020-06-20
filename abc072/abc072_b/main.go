@@ -1,8 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// Code for B - OddString
-	fmt.Printf("Hello world")
+	var s string
+	fmt.Scan(&s)
+	letters := strings.Split(s, "")
+	var ans []string
+	for i, letter := range letters {
+		if (i+1)%2 != 0 {
+			ans = append(ans, letter)
+		}
+	}
+	fmt.Println(strings.Join(ans, ""))
 }
