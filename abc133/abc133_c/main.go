@@ -7,6 +7,10 @@ var moduler = 2019
 func main() {
 	var l, r int
 	fmt.Scan(&l, &r)
+	if r-l >= 2019 {
+		fmt.Println(0)
+		return
+	}
 	ans := l * (l + 1) % moduler
 	for i := l; i < r; i++ {
 		for j := l + 1; j <= r; j++ {
