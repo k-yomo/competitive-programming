@@ -1,8 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+	"strconv"
+)
 
 func main() {
-	// Code for B - 1 21
-	fmt.Printf("Hello world")
+	var a, b string
+	fmt.Scan(&a, &b)
+	n, _ := strconv.ParseFloat(a+b, 64)
+	sqrt := math.Sqrt(n)
+	if math.Floor(sqrt) == sqrt {
+		fmt.Println("Yes")
+	} else {
+		fmt.Println("No")
+	}
 }

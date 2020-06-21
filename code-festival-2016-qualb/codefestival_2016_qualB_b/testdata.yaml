@@ -1,0 +1,39 @@
+- in: |-
+    10 2 3
+    abccabaabb
+  exp: |-
+    Yes
+    Yes
+    No
+    No
+    Yes
+    Yes
+    Yes
+    No
+    No
+    No
+- in: |-
+    12 5 2
+    cabbabaacaba
+  exp: |-
+    No
+    Yes
+    Yes
+    Yes
+    Yes
+    No
+    Yes
+    Yes
+    No
+    Yes
+    No
+    No
+- in: |-
+    5 2 2
+    ccccc
+  exp: |-
+    No
+    No
+    No
+    No
+    No

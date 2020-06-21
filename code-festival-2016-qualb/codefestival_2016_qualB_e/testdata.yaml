@@ -1,0 +1,43 @@
+- in: |-
+    5
+    aa
+    abbaa
+    abbba
+    aaab
+    aaaaaba
+    5
+    1 abcdefghijklmnopqrstuvwxyz
+    2 bacdefghijklmnopqrstuvwxyz
+    3 abcdefghijklmnopqrstuvwxyz
+    4 bacdefghijklmnopqrstuvwxyz
+    5 abcdefghijklmnopqrstuvwxyz
+  exp: |-
+    1
+    2
+    5
+    4
+    2
+- in: |-
+    8
+    abrakatabra
+    abadaba
+    abracadabra
+    atcoder
+    grand
+    contest
+    ababa
+    a
+    6
+    3 abcdefghijklmnopqrstuvwxyz
+    6 qwertyuiopasdfghjklzxcvbnm
+    8 poiuytrewqlkjhgfdsamnbvcxz
+    2 qazwsxedcrfvtgbyhnujmikolp
+    1 plokmijnuhbygvtfcrdxeszwaq
+    4 mnbvcxzasdfghjklpoiuytrewq
+  exp: |-
+    4
+    8
+    2
+    3
+    4
+    7
