@@ -52,3 +52,16 @@ func ReverseBytes(s []byte) {
 func JoinInts(ints []int) string {
 	return strings.Trim(strings.Join(strings.Fields(fmt.Sprint(ints)), ""), "[]")
 }
+
+type IntQueue []int
+
+func (queue *IntQueue) Enqueue(i int) {
+	*queue = append(*queue, i)
+}
+
+func (queue *IntQueue) Dequeue() int {
+	result := (*queue)[0]
+	*queue = (*queue)[1:]
+	return result
+}
+
