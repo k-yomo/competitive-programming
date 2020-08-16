@@ -158,3 +158,20 @@ func (d *Dijkstra) Search(origin int) {
 		}
 	}
 }
+
+type Coordinate struct {
+	X int
+	Y int
+}
+
+type CoordinateQueue []*Coordinate
+
+func (queue *CoordinateQueue) Enqueue(c *Coordinate) {
+	*queue = append(*queue, c)
+}
+
+func (queue *CoordinateQueue) Dequeue() *Coordinate {
+	result := (*queue)[0]
+	*queue = (*queue)[1:]
+	return result
+}
