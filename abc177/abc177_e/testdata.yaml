@@ -1,0 +1,12 @@
+- in: |-
+    3
+    3 4 5
+  exp: pairwise coprime
+- in: |-
+    3
+    6 10 15
+  exp: setwise coprime
+- in: |-
+    3
+    6 10 16
+  exp: not coprime

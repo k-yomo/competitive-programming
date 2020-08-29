@@ -1,0 +1,8 @@
+- in: |-
+    cabacc
+    abc
+  exp: "1"
+- in: |-
+    codeforces
+    atcoder
+  exp: "6"
