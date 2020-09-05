@@ -1,0 +1,16 @@
+- in: |-
+    3
+    abc
+  exp: "1"
+- in: |-
+    6
+    abcabc
+  exp: "-1"
+- in: |-
+    7
+    atcoder
+  exp: "-1"
+- in: |-
+    19
+    bcabcabcabcabcabcab
+  exp: "9"
