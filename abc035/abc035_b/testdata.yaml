@@ -1,0 +1,16 @@
+- in: |-
+    UL?
+    1
+  exp: "3"
+- in: |-
+    UD?
+    1
+  exp: "1"
+- in: |-
+    UUUU?DDR?LLLL
+    1
+  exp: "7"
+- in: |-
+    UULL?
+    2
+  exp: "3"
