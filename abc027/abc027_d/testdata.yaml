@@ -1,0 +1,8 @@
+- in: M+MM-M
+  exp: "2"
+- in: MMM+M
+  exp: "1"
+- in: MMM+--MMM
+  exp: "3"
+- in: +
+  exp: "0"

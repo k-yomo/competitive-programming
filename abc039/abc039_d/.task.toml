@@ -1,10 +1,10 @@
 
 [AtCoder]
   ContestID = "abc039"
-  ContestURL = "https://abc039.contest.atcoder.jp"
+  ContestURL = "https://atcoder.jp/contests/abc039"
   TaskID = "abc039_d"
   TaskName = "D - 画像処理高橋君"
-  TaskURL = "https://abc039.contest.atcoder.jp/tasks/abc039_d"
+  TaskURL = "https://atcoder.jp/contests/abc039/tasks/abc039_d"
 
 [Environment]
   BuildCmd = "go build -o ./a.out main.go"
@@ -12,10 +12,10 @@
   CleanCmd = "rm ./a.out"
   Cmd = "./a.out"
   CmdOnDocker = "./a.out"
-  DockerImage = "docker.io/library/golang:1.6"
+  DockerImage = "docker.io/library/golang:1.14.1"
   Key = "go"
-  Language = "Go (1.6)"
-  LanguageCode = "3013"
+  Language = "Go (1.14.1)"
+  LanguageCode = "4026"
   Note = ""
   SrcName = "main.go"
   Template = "internal/go/main.go"

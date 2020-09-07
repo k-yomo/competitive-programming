@@ -1,0 +1,10 @@
+- in: ICEDT
+  exp: "YES"
+- in: MUGICHA
+  exp: "NO"
+- in: OOLONGT
+  exp: "YES"
+- in: T
+  exp: "YES"
+- in: TEA
+  exp: "NO"

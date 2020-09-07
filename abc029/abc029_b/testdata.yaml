@@ -1,0 +1,28 @@
+- in: |-
+    january
+    february
+    march
+    april
+    may
+    june
+    july
+    august
+    september
+    october
+    november
+    december
+  exp: "8"
+- in: |-
+    rrrrrrrrrr
+    srrrrrrrrr
+    rsr
+    ssr
+    rrs
+    srsrrrrrr
+    rssrrrrrr
+    sss
+    rrr
+    srr
+    rsrrrrrrrr
+    ssrrrrrrrr
+  exp: "11"

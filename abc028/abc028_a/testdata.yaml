@@ -1,0 +1,8 @@
+- in: "80"
+  exp: Good
+- in: "100"
+  exp: Perfect
+- in: "59"
+  exp: Bad
+- in: "95"
+  exp: Great

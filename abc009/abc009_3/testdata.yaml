@@ -1,0 +1,16 @@
+- in: |-
+    3 2
+    abc
+  exp: abc
+- in: |-
+    7 2
+    atcoder
+  exp: actoder
+- in: |-
+    7 7
+    atcoder
+  exp: acdeort
+- in: |-
+    10 3
+    helloworld
+  exp: dehloworll

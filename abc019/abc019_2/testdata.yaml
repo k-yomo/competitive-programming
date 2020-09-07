@@ -1,0 +1,6 @@
+- in: aabbbaad
+  exp: a2b3a2d1
+- in: aabbbbbbbbbbbbxyza
+  exp: a2b12x1y1z1a1
+- in: edcba
+  exp: e1d1c1b1a1

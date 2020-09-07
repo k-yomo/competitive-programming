@@ -1,0 +1,25 @@
+- in: |-
+    4 5 2
+    xoooo
+    oooox
+    ooooo
+    oxxoo
+  exp: "3"
+- in: |-
+    4 5 2
+    ooooo
+    oxoox
+    oooox
+    oxxoo
+  exp: "0"
+- in: |-
+    8 6 3
+    oooooo
+    oooooo
+    oooooo
+    oooooo
+    oxoooo
+    oooooo
+    oooooo
+    oooooo
+  exp: "4"

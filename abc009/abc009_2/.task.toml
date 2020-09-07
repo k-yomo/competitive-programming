@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc009"
+  ContestURL = "https://atcoder.jp/contests/abc009"
+  TaskID = "abc009_2"
+  TaskName = "B - 心配性な富豪、ファミリーレストランに行く。"
+  TaskURL = "https://atcoder.jp/contests/abc009/tasks/abc009_2"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.14.1"
+  Key = "go"
+  Language = "Go (1.14.1)"
+  LanguageCode = "4026"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

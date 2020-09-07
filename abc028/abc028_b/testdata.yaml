@@ -1,0 +1,6 @@
+- in: BEAF
+  exp: 1 1 0 0 1 1
+- in: DECADE
+  exp: 1 0 1 2 2 0
+- in: ABBCCCDDDDEEEEEFFFFFF
+  exp: 1 2 3 4 5 6

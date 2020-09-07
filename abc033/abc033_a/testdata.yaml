@@ -1,0 +1,6 @@
+- in: "2222"
+  exp: SAME
+- in: "1221"
+  exp: DIFFERENT
+- in: "0000"
+  exp: SAME

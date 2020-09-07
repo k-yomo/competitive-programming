@@ -1,0 +1,12 @@
+- in: |-
+    abcabc
+    2
+  exp: "3"
+- in: |-
+    aaaaa
+    1
+  exp: "1"
+- in: |-
+    hello
+    10
+  exp: "0"

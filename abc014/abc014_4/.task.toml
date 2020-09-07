@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc014"
+  ContestURL = "https://atcoder.jp/contests/abc014"
+  TaskID = "abc014_4"
+  TaskName = "D - 閉路"
+  TaskURL = "https://atcoder.jp/contests/abc014/tasks/abc014_4"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.14.1"
+  Key = "go"
+  Language = "Go (1.14.1)"
+  LanguageCode = "4026"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

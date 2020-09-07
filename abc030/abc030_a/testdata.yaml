@@ -1,0 +1,6 @@
+- in: 5 2 6 3
+  exp: AOKI
+- in: 100 80 100 73
+  exp: TAKAHASHI
+- in: 66 30 55 25
+  exp: DRAW

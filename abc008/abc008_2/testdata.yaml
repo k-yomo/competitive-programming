@@ -1,0 +1,23 @@
+- in: |-
+    4
+    taro
+    jiro
+    taro
+    saburo
+  exp: taro
+- in: |-
+    1
+    takahashikun
+  exp: takahashikun
+- in: |-
+    9
+    a
+    b
+    c
+    c
+    b
+    c
+    b
+    d
+    e
+  exp: b

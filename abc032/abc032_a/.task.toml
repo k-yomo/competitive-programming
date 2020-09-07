@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc032"
+  ContestURL = "https://atcoder.jp/contests/abc032"
+  TaskID = "abc032_a"
+  TaskName = "A - 高橋君と青木君の好きな数"
+  TaskURL = "https://atcoder.jp/contests/abc032/tasks/abc032_a"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.14.1"
+  Key = "go"
+  Language = "Go (1.14.1)"
+  LanguageCode = "4026"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

@@ -1,0 +1,10 @@
+- in: "1"
+  exp: Aoki
+- in: "5"
+  exp: Takahashi
+- in: "7"
+  exp: Aoki
+- in: "10"
+  exp: Takahashi
+- in: "123456789123456789"
+  exp: Aoki

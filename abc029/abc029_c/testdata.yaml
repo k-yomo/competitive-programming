@@ -1,0 +1,16 @@
+- in: "1"
+  exp: |-
+    a
+    b
+    c
+- in: "2"
+  exp: |-
+    aa
+    ab
+    ac
+    ba
+    bb
+    bc
+    ca
+    cb
+    cc

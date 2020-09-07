@@ -1,0 +1,12 @@
+- in: |-
+    abcde
+    8
+  exp: bc
+- in: |-
+    aeiou
+    22
+  exp: ue
+- in: |-
+    vwxyz
+    25
+  exp: zz
