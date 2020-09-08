@@ -8,23 +8,22 @@ import (
 	"strings"
 )
 
-func main() {
+func main()  {
 	io, flush := NewIO()
 	defer flush()
 
-	petalCounts := io.ScanInts(io.ScanInt())
-	var tearCount int
-	for _, petalCount := range petalCounts {
-		for {
-			if petalCount%3 == 2 || petalCount%2 == 0 {
-				tearCount++
-				petalCount--
-			} else {
-				break
-			}
+	graph := make([][]string, 4)
+	for i := 0; i < 4; i++ {
+		graph[i] = io.ScanStrings(4)
+	}
+	for i := 0; i < 2; i++ {
+		for j := 0; j < 4; j++ {
+			graph[i][j], graph[3-i][3-j] = graph[3-i][3-j], graph[i][j]
 		}
 	}
-	fmt.Println(tearCount)
+	for i := 0; i < 4; i++ {
+		io.Println(strings.Join(graph[i], " "))
+	}
 }
 
 type IO struct {
@@ -145,3 +144,4 @@ func (io *IO) ScanFloat64s(n int) []float64 {
 func (io *IO) Println(a ...interface{}) {
 	fmt.Fprintln(io.writer, a...)
 }
+

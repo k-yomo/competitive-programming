@@ -4,27 +4,18 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 )
 
-func main() {
+func main()  {
 	io, flush := NewIO()
 	defer flush()
 
-	petalCounts := io.ScanInts(io.ScanInt())
-	var tearCount int
-	for _, petalCount := range petalCounts {
-		for {
-			if petalCount%3 == 2 || petalCount%2 == 0 {
-				tearCount++
-				petalCount--
-			} else {
-				break
-			}
-		}
-	}
-	fmt.Println(tearCount)
+	seconds := io.ScanInts(io.ScanInt())
+	sort.Ints(seconds)
+	fmt.Println(seconds[0])
 }
 
 type IO struct {
@@ -145,3 +136,4 @@ func (io *IO) ScanFloat64s(n int) []float64 {
 func (io *IO) Println(a ...interface{}) {
 	fmt.Fprintln(io.writer, a...)
 }
+
