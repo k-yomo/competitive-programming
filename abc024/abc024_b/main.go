@@ -3,6 +3,19 @@ package main
 import "fmt"
 
 func main() {
-	// Code for B - 自動ドア
-	fmt.Printf("Hello world")
+	var n, t int
+	fmt.Scan(&n, &t)
+	var doorCloseAt, totalDoorOpenDuration int
+	for i := 0; i < n; i++ {
+		var enteredAt int
+		fmt.Scan(&enteredAt)
+		if enteredAt < doorCloseAt {
+			totalDoorOpenDuration += enteredAt + t - doorCloseAt
+			doorCloseAt = enteredAt + t
+		} else {
+			totalDoorOpenDuration += t
+			doorCloseAt = enteredAt + t
+		}
+	}
+	fmt.Println(totalDoorOpenDuration)
 }

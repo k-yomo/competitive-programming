@@ -1,8 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// Code for B - カキ
-	fmt.Printf("Hello world")
+	var rCount int
+	for i := 0; i < 12; i++ {
+		var s string
+		fmt.Scan(&s)
+		if strings.Contains(s, "r") {
+			rCount++
+		}
+	}
+	fmt.Println(rCount)
 }

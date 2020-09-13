@@ -1,8 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
-	// Code for B - 足し算
-	fmt.Printf("Hello world")
+	var a, b string
+	fmt.Scan(&a, &b)
+
+	num, _ := strconv.Atoi(a+b)
+	fmt.Println(num * 2)
 }
