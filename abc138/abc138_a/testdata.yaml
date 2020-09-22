@@ -1,0 +1,12 @@
+- in: |-
+    3200
+    pink
+  exp: pink
+- in: |-
+    3199
+    pink
+  exp: red
+- in: |-
+    4049
+    red
+  exp: red

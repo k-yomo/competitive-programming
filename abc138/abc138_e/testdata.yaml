@@ -1,0 +1,12 @@
+- in: |-
+    contest
+    son
+  exp: "10"
+- in: |-
+    contest
+    programming
+  exp: "-1"
+- in: |-
+    contest
+    sentence
+  exp: "33"

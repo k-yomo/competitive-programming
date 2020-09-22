@@ -1,8 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// Code for B - ROT N
-	fmt.Printf("Hello world")
+	var n int
+	var s string
+	fmt.Scan(&n, &s)
+
+	strs := make([]string, len(s))
+	for i, char := range s {
+		asciiCode := int(char) + n
+		if asciiCode >= 91 {
+			asciiCode -= 26
+		}
+		strs[i] = string(asciiCode)
+	}
+	fmt.Println(strings.Join(strs, ""))
 }

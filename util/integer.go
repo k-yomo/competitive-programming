@@ -27,8 +27,12 @@ func Max(a, b int) int {
 	return b
 }
 
-func AbsDiff(n1 int, n2 int) int {
+func AbsDiff(n1, n2 int) int {
 	return int(math.Abs(float64(n1 - n2)))
+}
+
+func AbsDiffFloat64(n1, n2 float64) float64 {
+	return math.Abs(n1 - n2)
 }
 
 // Gcd returns greatest common divisor
@@ -150,6 +154,17 @@ func Unique(intSlice []int) []int {
 	return list
 }
 
+func IsPrime(n int) bool {
+	if n <= 1 {
+		return false
+	}
+	for i := 2; i*i <= n; i++ {
+		if n%i == 0 {
+			return false
+		}
+	}
+	return true
+}
 
 func PrimeFactors(n int) (pfs []int) {
 	for n%2 == 0 {

@@ -1,8 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	// Code for B - エージェント高橋君
-	fmt.Printf("Hello world")
+	var x int
+	fmt.Scan(&x)
+
+	fmt.Println(int(math.Sqrt(math.Sqrt(float64(x)))))
 }

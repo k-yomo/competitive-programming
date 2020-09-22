@@ -3,6 +3,24 @@ package main
 import "fmt"
 
 func main() {
-	// Code for B - Collatz Problem
-	fmt.Printf("Hello world")
+	var s int
+	fmt.Scan(&s)
+
+	numExistMap := map[int]bool{s: true}
+	i := 2
+	for {
+		var n int
+		if s%2 == 0 {
+			n = s / 2
+		} else {
+			n = 3*s + 1
+		}
+		if numExistMap[n] {
+			fmt.Println(i)
+			return
+		}
+		numExistMap[n] = true
+		s = n
+		i++
+	}
 }

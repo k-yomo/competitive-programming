@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	// Code for B - Painting Balls with AtCoDeer
-	fmt.Printf("Hello world")
+	var n, k float64
+	fmt.Scan(&n, &k)
+	fmt.Println(int(k * math.Pow(k-1, n-1)))
 }
