@@ -1,0 +1,6 @@
+- in: apple
+  exp: apples
+- in: bus
+  exp: buses
+- in: box
+  exp: boxs
