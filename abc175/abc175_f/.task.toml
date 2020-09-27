@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc175"
+  ContestURL = "https://atcoder.jp/contests/abc175"
+  TaskID = "abc175_f"
+  TaskName = "F - Making Palindrome"
+  TaskURL = "https://atcoder.jp/contests/abc175/tasks/abc175_f"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.14.1"
+  Key = "go"
+  Language = "Go (1.14.1)"
+  LanguageCode = "4026"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

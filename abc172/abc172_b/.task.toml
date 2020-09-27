@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc172"
+  ContestURL = "https://atcoder.jp/contests/abc172"
+  TaskID = "abc172_b"
+  TaskName = "B - Minor Change"
+  TaskURL = "https://atcoder.jp/contests/abc172/tasks/abc172_b"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.14.1"
+  Key = "go"
+  Language = "Go (1.14.1)"
+  LanguageCode = "4026"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

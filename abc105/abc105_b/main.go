@@ -1,8 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	// Code for B - Cakes and Donuts
-	fmt.Printf("Hello world")
+	var n int
+	fmt.Scan(&n)
+
+	for i := 0; i <= n; i += 7 {
+		if (n-i)%4 == 0 {
+			fmt.Println("Yes")
+			return
+		}
+	}
+	fmt.Println("No")
 }

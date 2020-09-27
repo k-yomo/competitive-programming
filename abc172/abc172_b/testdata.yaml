@@ -1,0 +1,12 @@
+- in: |-
+    cupofcoffee
+    cupofhottea
+  exp: "4"
+- in: |-
+    abcde
+    bcdea
+  exp: "5"
+- in: |-
+    apple
+    apple
+  exp: "0"

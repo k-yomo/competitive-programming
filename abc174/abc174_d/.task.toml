@@ -1,0 +1,21 @@
+
+[AtCoder]
+  ContestID = "abc174"
+  ContestURL = "https://atcoder.jp/contests/abc174"
+  TaskID = "abc174_d"
+  TaskName = "D - Alter Altar"
+  TaskURL = "https://atcoder.jp/contests/abc174/tasks/abc174_d"
+
+[Environment]
+  BuildCmd = "go build -o ./a.out main.go"
+  BuildCmdOnDocker = "go build -o a.out main.go"
+  CleanCmd = "rm ./a.out"
+  Cmd = "./a.out"
+  CmdOnDocker = "./a.out"
+  DockerImage = "docker.io/library/golang:1.14.1"
+  Key = "go"
+  Language = "Go (1.14.1)"
+  LanguageCode = "4026"
+  Note = ""
+  SrcName = "main.go"
+  Template = "internal/go/main.go"

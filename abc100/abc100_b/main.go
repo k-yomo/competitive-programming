@@ -1,8 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	// Code for B - Ringo's Favorite Numbers
-	fmt.Printf("Hello world")
+	var d, n int
+	fmt.Scan(&d, &n)
+
+	if n == 100 {
+		n++
+	}
+	for i := 0; i < d; i++ {
+		n *= 100
+	}
+	fmt.Println(n)
 }

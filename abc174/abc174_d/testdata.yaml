@@ -1,0 +1,12 @@
+- in: |-
+    4
+    WWRR
+  exp: "2"
+- in: |-
+    2
+    RR
+  exp: "0"
+- in: |-
+    8
+    WRWWRWRR
+  exp: "3"

@@ -1,8 +1,26 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+	"strings"
+)
 
 func main() {
-	// Code for B - Digit Sums
-	fmt.Printf("Hello world")
+	var b string
+	fmt.Scan(&b)
+
+	numStrs := strings.Split(b, "")
+	var sum int
+	for _, numStr := range numStrs {
+		num, _ := strconv.Atoi(numStr)
+		sum += num
+	}
+
+	num, _ := strconv.Atoi(b)
+	if num%sum == 0 {
+		fmt.Println("Yes")
+	} else {
+		fmt.Println("No")
+	}
 }
