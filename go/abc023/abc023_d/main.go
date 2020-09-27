@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/k-yomo/atcoder/util"
+	"github.com/k-yomo/atcoder/go/util"
 	"math"
 	"os"
 	"strconv"
