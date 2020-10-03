@@ -84,8 +84,17 @@ smallvec = "=1.2.0"
 [new.template.src]
 kind = "inline"
 content = '''
-fn main() {
-    todo!();
+#![allow(unused_imports)]
+use proconio::*;
+use std::cmp::*;
+use std::collections::*;
+use std::io::Write;
+use std::ops::Bound::*;
+ 
+fn main() { 
+    input! {
+        
+    }
 }
 '''
 
