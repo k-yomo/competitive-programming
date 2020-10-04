@@ -1,0 +1,6 @@
+- in: 4 AGCT
+  exp: "2"
+- in: 4 ATAT
+  exp: "4"
+- in: 10 AAATACCGCG
+  exp: "6"
