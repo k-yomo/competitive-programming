@@ -1,0 +1,23 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      3
+      cbaa
+      daacc
+      acacac
+    out: |
+      aac
+  - name: sample2
+    in: |
+      3
+      a
+      aa
+      b
+    out: >
+
+extend: []

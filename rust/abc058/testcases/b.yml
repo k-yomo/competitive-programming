@@ -1,0 +1,20 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      xyz
+      abc
+    out: |
+      xaybzc
+  - name: sample2
+    in: |
+      atcoderbeginnercontest
+      atcoderregularcontest
+    out: |
+      aattccooddeerrbreeggiunlnaerrccoonntteesstt
+
+extend: []
