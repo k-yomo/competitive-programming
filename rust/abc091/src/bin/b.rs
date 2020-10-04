@@ -13,16 +13,16 @@ fn main() {
         t: [String; m],
     }
 
-    let mut wordMap: HashMap<&String, i64> = HashMap::new();
+    let mut word_map: HashMap<&String, i64> = HashMap::new();
     for word in s.iter() {
-        let count: &mut i64 = wordMap.entry(word).or_insert(0);
+        let count: &mut i64 = word_map.entry(word).or_insert(0);
         *count += 1;
     }
     for word in t.iter() {
-        let count: &mut i64 = wordMap.entry(word).or_insert(0);
+        let count: &mut i64 = word_map.entry(word).or_insert(0);
         *count -= 1;
     }
     
-    let max = wordMap.values().max().unwrap();
+    let max = word_map.values().max().unwrap();
     println!("{}", if max > &0_i64 { max } else { &0_i64 });
 }
