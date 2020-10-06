@@ -1,0 +1,22 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      ant
+      obe
+      rec
+    out: |
+      abc
+  - name: sample2
+    in: |
+      edu
+      cat
+      ion
+    out: |
+      ean
+
+extend: []
