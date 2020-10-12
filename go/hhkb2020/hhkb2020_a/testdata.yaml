@@ -1,0 +1,8 @@
+- in: |-
+    Y
+    a
+  exp: A
+- in: |-
+    N
+    b
+  exp: b
