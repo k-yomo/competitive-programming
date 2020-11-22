@@ -1,0 +1,62 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: self
+    in: |
+      1 1
+      1 4
+    out: |
+      1
+  - name: self2
+    in: |
+      1 1
+      5 5
+    out: |
+      1
+  - name: self3
+    in: |
+      1 1
+      1 4
+    out: |
+      1
+  - name: self4
+    in: |
+      0 0
+      0 0
+    out: |
+      0
+  - name: self4
+    in: |
+      0 0
+      0 5
+    out: |
+      2
+  - name: sample1
+    in: |
+      1 1
+      5 6
+    out: |
+      2
+  - name: sample2
+    in: |
+      1 1
+      1 200001
+    out: |
+      2
+  - name: sample3
+    in: |
+      2 3
+      998244353 998244853
+    out: |
+      3
+  - name: sample4
+    in: |
+      1 1
+      1 1
+    out: |
+      0
+
+extend: []
