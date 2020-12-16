@@ -1,13 +1,24 @@
 #![allow(unused_imports)]
-use proconio::*;
-use proconio::marker::*;
+
 use std::cmp::*;
 use std::collections::*;
 use std::io::Write;
 use std::ops::Bound::*;
- 
-fn main() { 
+
+use proconio::*;
+use proconio::marker::*;
+
+fn main() {
     input! {
-        
+        (n, m): (usize, usize),
     }
+    if n == 1 && m == 1 {
+        println!("1");
+        return;
+    }
+    if n == 1 || m == 1 {
+        println!("{}", n * m - 2);
+        return;
+    }
+    println!("{}", n * m - (2 * (m + n) - 4));
 }
