@@ -4,6 +4,13 @@ timelimit: 2s 500ms
 match: Lines
 
 cases:
+  - name: handmade
+    in: |
+      1 2 1 1
+      1 1
+      1 2
+    out: |
+      1
   - name: sample1
     in: |
       3 3 2 1
