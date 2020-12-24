@@ -1,36 +1,30 @@
 #![allow(unused_imports)]
-use proconio::*;
-use proconio::marker::*;
+
 use std::cmp::*;
 use std::collections::*;
 use std::io::Write;
 use std::ops::Bound::*;
- 
-fn main() { 
+
+use proconio::*;
+use proconio::marker::*;
+
+fn main() {
     input! {
-        n: usize,
+        (n, k): (usize, usize),
         a: [usize; n],
     }
 
     let mut num_map = HashMap::new();
-    let mut first = 0;
-    let mut second = 0;
     for num in a {
-        let count: &mut i64 = num_map.entry(num).or_insert(0);
+        let count: &mut usize = num_map.entry(num).or_insert(0);
         *count += 1;
-        if *count < 2 {
-            continue
-        }
-        if num == first || num == second {
-            continue
-        }
-        if second < num {
-            first = second;
-            second = num;
-        } else if first < num {
-            first = num;
-        }
     }
-    println!("first: {}, second: {}", first, second);
-    println!("{}", first * second);
+    let mut num_counts: Vec<&usize> = num_map.values().collect();
+    if num_counts.len() <= k {
+        println!("0");
+        return;
+    }
+
+    num_counts.sort();
+    println!("{}", num_counts[..(num_counts.len() - k)].iter().map(|&&num| num).sum::<usize>());
 }
