@@ -28,5 +28,17 @@ cases:
       30
     out: |
       0
+  - name: manual1
+    in: |
+      1
+      30
+    out: |
+      0
+  - name: manual1
+    in: |
+      1
+      31
+    out: |
+      31
 
 extend: []
