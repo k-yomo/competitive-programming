@@ -1,0 +1,33 @@
+---
+type: Batch
+timelimit: 10s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      ABCD
+      3
+      ABCDXXXXXX
+      YYYYABCDXX
+      DCBAZZZZZZ
+    out: |
+      2
+  - name: sample2
+    in: |
+      XYZ
+      1
+      ZAAAAAAAXY
+    out: |
+      1
+  - name: sample3
+    in: |
+      PQR
+      3
+      PQRAAAAPQR
+      BBPQRBBBBB
+      CCCCCCCCCC
+    out: |
+      2
+
+extend: []

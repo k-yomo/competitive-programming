@@ -1,0 +1,40 @@
+---
+type: Batch
+timelimit: 10s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      2 3
+      ??O
+      IIJ
+    out: |
+      4
+  - name: sample2
+    in: |
+      2 2
+      ??
+      ??
+    out: |
+      3
+  - name: sample3
+    in: |
+      3 3
+      ??I
+      ???
+      O?J
+    out: |
+      53
+  - name: sample4
+    in: |
+      5 4
+      JOI?
+      ????
+      ????
+      ????
+      ?JOI
+    out: |
+      28218
+
+extend: []
