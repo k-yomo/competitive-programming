@@ -1,0 +1,22 @@
+---
+type: Batch
+timelimit: 10s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      9850
+      1050
+      800
+      420
+      380
+      600
+      820
+      2400
+      1800
+      980
+    out: |
+      600
+
+extend: []
