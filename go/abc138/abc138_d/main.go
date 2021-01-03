@@ -20,6 +20,7 @@ func main() {
 		a := io.ScanInt() - 1
 		b := io.ScanInt() - 1
 		connections[a] = append(connections[a], b)
+		connections[b] = append(connections[b], a)
 	}
 
 	for i := 0; i < q; i++ {
