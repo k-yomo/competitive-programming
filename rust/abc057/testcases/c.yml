@@ -19,5 +19,10 @@ cases:
       9876543210
     out: |
       6
+  - name: sample4
+    in: |
+      121
+    out: |
+      2
 
 extend: []
