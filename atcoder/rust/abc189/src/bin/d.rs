@@ -12,28 +12,21 @@ use proconio::*;
 use proconio::marker::*;
 use superslice::*;
 
-fn main() { 
+fn main() {
     input! {
         n: usize,
         s: [String; n],
     }
 
-
-    let mut count = 0;
-    let mut or_count = 1_u32;
-    for (i, op) in s.iter().rev().enumerate() {
-        if op == "AND" {
-            count += 1;
-            if or_count > 0 {
-                count += 2_i128.pow(or_count);
-            }
-            or_count = 0;
+    let mut dp: Vec<u128> = vec![0; n + 1];
+    dp[0] = 1;
+    for i in 1..=n {
+        dp[i] = if s[i - 1] == "AND" {
+            dp[i - 1]
         } else {
-            or_count += 1;
+            dp[i - 1] + 2_u128.pow(i as u32)
         }
     }
-    if or_count > 0 {
-        count += 2_i128.pow(or_count);
-    }
-    println!("{}", count - 1);
+
+    println!("{}", dp[n])
 }
