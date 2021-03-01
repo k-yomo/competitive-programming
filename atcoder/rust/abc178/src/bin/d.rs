@@ -20,10 +20,7 @@ fn main() {
     let mut dp = vec![0; s+1];
     dp[0] = 1;
     for i in 3..=s {
-        for j in 0..=(i-3) {
-            dp[i] += dp[j];
-            dp[i] %= 1000000007;
-        }
+        dp[i] = (dp[i-1] + dp[i-3]) % 1000000007
     }
 
     println!("{}", dp[s]);
