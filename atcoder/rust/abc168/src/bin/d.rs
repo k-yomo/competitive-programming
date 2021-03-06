@@ -20,38 +20,31 @@ fn main() {
         ab: [(usize, usize); m],
     }
 
-    let mut d = vec![usize::max_value(); n];
-    d[1] = 0;
-
-    let mut g = vec![vec![false; n]; n];
+    let mut g = vec![Vec::new(); n];
     for (a, b) in ab {
-        g[a - 1][b - 1] = true;
-        g[b - 1][a - 1] = true;
+        g[a - 1].push(b - 1);
+        g[b - 1].push(a - 1);
     }
 
-    let mut visited = vec![false; n];
-    let mut ans = vec![0; n];
+    let mut depths = vec![-1; n];
     let mut que = VecDeque::new();
     que.push_back((0, 0));
     while !que.is_empty() {
         let (cur, from) = que.pop_front().unwrap();
-        if visited[cur] {
+        if depths[cur] >= 0 {
             continue;
         }
-        ans[cur] = from;
-        visited[cur] = true;
-        for (i, e) in g[cur].iter().enumerate() {
-            if visited[i] {
+        depths[cur] = from as i32;
+        for i in g[cur].iter() {
+            if depths[*i] >= 0 {
                 continue;
             }
-            if g[cur][i] {
-                que.push_back((i, cur));
-            }
+            que.push_back((*i, cur));
         }
     }
 
     println!("Yes");
-    for i in ans[1..].iter() {
+    for i in depths[1..].iter() {
         println!("{}", i + 1);
     }
 }
