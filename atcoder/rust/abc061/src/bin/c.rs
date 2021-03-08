@@ -10,8 +10,11 @@ use proconio::*;
 fn main() {
     input! {
         (n, mut k): (usize, usize),
-        ab: [(usize, usize); n],
+        mut ab: [(usize, usize); n],
     }
+
+    ab.sort_by_key(|x| x.0);
+
     for (a, b) in ab {
         if b < k {
             k -= b;
