@@ -1,21 +1,23 @@
 #![allow(unused_imports)]
+use proconio::marker::*;
 use proconio::*;
 use std::cmp::*;
 use std::collections::*;
 use std::io::Write;
 use std::ops::Bound::*;
- 
-fn main() { 
+
+fn main() {
     input! {
-        s: String,
+        mut s: String,
     }
-    
-    if s.len() < 5 {
-        return println!("NO");
-    }
-    
-    let mut t = "";
-    while  {
-        
+
+    s = ["eraser", "erase", "dreamer", "dream"]
+        .iter()
+        .fold(s, |st, w| st.replace(w, ""));
+
+    if s.is_empty() {
+        println!("YES")
+    } else {
+        println!("NO")
     }
 }

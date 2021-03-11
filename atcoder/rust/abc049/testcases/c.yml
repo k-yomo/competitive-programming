@@ -19,5 +19,10 @@ cases:
       dreamerer
     out: |
       NO
+  - name: sample3
+    in: |
+      dreamerer
+    out: |
+      NO
 
 extend: []
