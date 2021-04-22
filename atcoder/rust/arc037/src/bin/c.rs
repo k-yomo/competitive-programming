@@ -5,11 +5,11 @@ use std::collections::*;
 use std::io::Write;
 use std::ops::Bound::*;
 
-use itertools::__std_iter::once;
 use itertools::*;
+use itertools::__std_iter::once;
 use itertools_num::ItertoolsNum;
-use proconio::marker::*;
 use proconio::*;
+use proconio::marker::*;
 use superslice::*;
 
 #[macro_export]
@@ -21,15 +21,8 @@ macro_rules! min {($ a : expr $ (, ) * ) => {{$ a } } ; ($ a : expr , $ b : expr
 #[macro_export]
 macro_rules! max {($ a : expr $ (, ) * ) => {{$ a } } ; ($ a : expr , $ b : expr $ (, ) * ) => {{std :: cmp :: max ($ a , $ b ) } } ; ($ a : expr , $ ($ rest : expr ) ,+ $ (, ) * ) => {{std :: cmp :: max ($ a , max ! ($ ($ rest ) ,+ ) ) } } ; }
 
-fn main() {
+fn main() { 
     input! {
-        mut r: f64, x: f64, y: f64,
-    }
-
-    let len = (x * x + y * y).sqrt();
-    if len < r {
-        println!("2")
-    } else {
-        println!("{}", (len / r).ceil())
+        
     }
 }
