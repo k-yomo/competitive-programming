@@ -1,0 +1,195 @@
+[package]
+name = "typical90"
+version = "0.1.0"
+authors = ["k-yomo <kanji.yy@gmail.com>"]
+edition = "2018"
+
+[package.metadata.cargo-compete]
+config = "../compete.toml"
+
+[package.metadata.cargo-compete.bin]
+001 = { name = "typical90-001", problem = { platform = "atcoder", contest = "typical90", index = "001", url = "https://atcoder.jp/contests/typical90/tasks/typical90_a" } }
+002 = { name = "typical90-002", problem = { platform = "atcoder", contest = "typical90", index = "002", url = "https://atcoder.jp/contests/typical90/tasks/typical90_b" } }
+003 = { name = "typical90-003", problem = { platform = "atcoder", contest = "typical90", index = "003", url = "https://atcoder.jp/contests/typical90/tasks/typical90_c" } }
+004 = { name = "typical90-004", problem = { platform = "atcoder", contest = "typical90", index = "004", url = "https://atcoder.jp/contests/typical90/tasks/typical90_d" } }
+005 = { name = "typical90-005", problem = { platform = "atcoder", contest = "typical90", index = "005", url = "https://atcoder.jp/contests/typical90/tasks/typical90_e" } }
+006 = { name = "typical90-006", problem = { platform = "atcoder", contest = "typical90", index = "006", url = "https://atcoder.jp/contests/typical90/tasks/typical90_f" } }
+007 = { name = "typical90-007", problem = { platform = "atcoder", contest = "typical90", index = "007", url = "https://atcoder.jp/contests/typical90/tasks/typical90_g" } }
+008 = { name = "typical90-008", problem = { platform = "atcoder", contest = "typical90", index = "008", url = "https://atcoder.jp/contests/typical90/tasks/typical90_h" } }
+009 = { name = "typical90-009", problem = { platform = "atcoder", contest = "typical90", index = "009", url = "https://atcoder.jp/contests/typical90/tasks/typical90_i" } }
+010 = { name = "typical90-010", problem = { platform = "atcoder", contest = "typical90", index = "010", url = "https://atcoder.jp/contests/typical90/tasks/typical90_j" } }
+011 = { name = "typical90-011", problem = { platform = "atcoder", contest = "typical90", index = "011", url = "https://atcoder.jp/contests/typical90/tasks/typical90_k" } }
+012 = { name = "typical90-012", problem = { platform = "atcoder", contest = "typical90", index = "012", url = "https://atcoder.jp/contests/typical90/tasks/typical90_l" } }
+013 = { name = "typical90-013", problem = { platform = "atcoder", contest = "typical90", index = "013", url = "https://atcoder.jp/contests/typical90/tasks/typical90_m" } }
+014 = { name = "typical90-014", problem = { platform = "atcoder", contest = "typical90", index = "014", url = "https://atcoder.jp/contests/typical90/tasks/typical90_n" } }
+015 = { name = "typical90-015", problem = { platform = "atcoder", contest = "typical90", index = "015", url = "https://atcoder.jp/contests/typical90/tasks/typical90_o" } }
+016 = { name = "typical90-016", problem = { platform = "atcoder", contest = "typical90", index = "016", url = "https://atcoder.jp/contests/typical90/tasks/typical90_p" } }
+017 = { name = "typical90-017", problem = { platform = "atcoder", contest = "typical90", index = "017", url = "https://atcoder.jp/contests/typical90/tasks/typical90_q" } }
+018 = { name = "typical90-018", problem = { platform = "atcoder", contest = "typical90", index = "018", url = "https://atcoder.jp/contests/typical90/tasks/typical90_r" } }
+019 = { name = "typical90-019", problem = { platform = "atcoder", contest = "typical90", index = "019", url = "https://atcoder.jp/contests/typical90/tasks/typical90_s" } }
+020 = { name = "typical90-020", problem = { platform = "atcoder", contest = "typical90", index = "020", url = "https://atcoder.jp/contests/typical90/tasks/typical90_t" } }
+021 = { name = "typical90-021", problem = { platform = "atcoder", contest = "typical90", index = "021", url = "https://atcoder.jp/contests/typical90/tasks/typical90_u" } }
+022 = { name = "typical90-022", problem = { platform = "atcoder", contest = "typical90", index = "022", url = "https://atcoder.jp/contests/typical90/tasks/typical90_v" } }
+023 = { name = "typical90-023", problem = { platform = "atcoder", contest = "typical90", index = "023", url = "https://atcoder.jp/contests/typical90/tasks/typical90_w" } }
+024 = { name = "typical90-024", problem = { platform = "atcoder", contest = "typical90", index = "024", url = "https://atcoder.jp/contests/typical90/tasks/typical90_x" } }
+025 = { name = "typical90-025", problem = { platform = "atcoder", contest = "typical90", index = "025", url = "https://atcoder.jp/contests/typical90/tasks/typical90_y" } }
+026 = { name = "typical90-026", problem = { platform = "atcoder", contest = "typical90", index = "026", url = "https://atcoder.jp/contests/typical90/tasks/typical90_z" } }
+027 = { name = "typical90-027", problem = { platform = "atcoder", contest = "typical90", index = "027", url = "https://atcoder.jp/contests/typical90/tasks/typical90_aa" } }
+028 = { name = "typical90-028", problem = { platform = "atcoder", contest = "typical90", index = "028", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ab" } }
+029 = { name = "typical90-029", problem = { platform = "atcoder", contest = "typical90", index = "029", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ac" } }
+
+[[bin]]
+name = "typical90-001"
+path = "src/bin/001.rs"
+
+[[bin]]
+name = "typical90-002"
+path = "src/bin/002.rs"
+
+[[bin]]
+name = "typical90-003"
+path = "src/bin/003.rs"
+
+[[bin]]
+name = "typical90-004"
+path = "src/bin/004.rs"
+
+[[bin]]
+name = "typical90-005"
+path = "src/bin/005.rs"
+
+[[bin]]
+name = "typical90-006"
+path = "src/bin/006.rs"
+
+[[bin]]
+name = "typical90-007"
+path = "src/bin/007.rs"
+
+[[bin]]
+name = "typical90-008"
+path = "src/bin/008.rs"
+
+[[bin]]
+name = "typical90-009"
+path = "src/bin/009.rs"
+
+[[bin]]
+name = "typical90-010"
+path = "src/bin/010.rs"
+
+[[bin]]
+name = "typical90-011"
+path = "src/bin/011.rs"
+
+[[bin]]
+name = "typical90-012"
+path = "src/bin/012.rs"
+
+[[bin]]
+name = "typical90-013"
+path = "src/bin/013.rs"
+
+[[bin]]
+name = "typical90-014"
+path = "src/bin/014.rs"
+
+[[bin]]
+name = "typical90-015"
+path = "src/bin/015.rs"
+
+[[bin]]
+name = "typical90-016"
+path = "src/bin/016.rs"
+
+[[bin]]
+name = "typical90-017"
+path = "src/bin/017.rs"
+
+[[bin]]
+name = "typical90-018"
+path = "src/bin/018.rs"
+
+[[bin]]
+name = "typical90-019"
+path = "src/bin/019.rs"
+
+[[bin]]
+name = "typical90-020"
+path = "src/bin/020.rs"
+
+[[bin]]
+name = "typical90-021"
+path = "src/bin/021.rs"
+
+[[bin]]
+name = "typical90-022"
+path = "src/bin/022.rs"
+
+[[bin]]
+name = "typical90-023"
+path = "src/bin/023.rs"
+
+[[bin]]
+name = "typical90-024"
+path = "src/bin/024.rs"
+
+[[bin]]
+name = "typical90-025"
+path = "src/bin/025.rs"
+
+[[bin]]
+name = "typical90-026"
+path = "src/bin/026.rs"
+
+[[bin]]
+name = "typical90-027"
+path = "src/bin/027.rs"
+
+[[bin]]
+name = "typical90-028"
+path = "src/bin/028.rs"
+
+[[bin]]
+name = "typical90-029"
+path = "src/bin/029.rs"
+[dependencies]
+num = "=0.2.1"
+num-bigint = "=0.2.6"
+num-complex = "=0.2.4"
+num-integer = "=0.1.42"
+num-iter = "=0.1.40"
+num-rational = "=0.2.4"
+num-traits = "=0.2.11"
+num-derive = "=0.3.0"
+ndarray = "=0.13.0"
+nalgebra = "=0.20.0"
+alga = "=0.9.3"
+libm = "=0.2.1"
+rand = { version = "=0.7.3", features = ["small_rng"] }
+getrandom = "=0.1.14"
+rand_chacha = "=0.2.2"
+rand_core = "=0.5.1"
+rand_hc = "=0.2.0"
+rand_pcg = "=0.2.1"
+rand_distr = "=0.2.2"
+petgraph = "=0.5.0"
+indexmap = "=1.3.2"
+regex = "=1.3.6"
+lazy_static = "=1.4.0"
+ordered-float = "=1.0.2"
+ascii = "=1.0.0"
+permutohedron = "=0.2.4"
+superslice = "=1.0.0"
+itertools = "=0.9.0"
+itertools-num = "=0.1.3"
+maplit = "=1.0.2"
+either = "=1.5.3"
+im-rc = "=14.3.0"
+fixedbitset = "=0.2.0"
+bitset-fixed = "=0.1.0"
+proconio = { version = "=0.3.6", features = ["derive"] }
+text_io = "=0.1.8"
+whiteread = "=0.5.0"
+rustc-hash = "=1.1.0"
+smallvec = "=1.2.0"
