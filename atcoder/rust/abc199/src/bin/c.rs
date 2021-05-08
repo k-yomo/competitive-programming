@@ -45,12 +45,9 @@ fn main() {
     }
 
     if is_reverse {
-        println!(
-            "{}{}",
-            (n..n * 2).map(|i| s[i]).collect::<String>(),
-            (0..n).map(|i| s[i]).collect::<String>()
-        )
-    } else {
-        println!("{}", s.iter().collect::<String>())
+        for i in 0..n {
+            s.swap(i, n + i)
+        }
     }
+    println!("{}", s.iter().collect::<String>())
 }
