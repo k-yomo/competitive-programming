@@ -28,9 +28,9 @@ fn main() {
     }
 
     let mut min = 2_i128.pow(31);
-    for bit_flag in 0..(1 << n + 1) {
+    for bit_flag in 0..(1 << n - 1) {
         let mut sep = vec![];
-        for i in 0..=n {
+        for i in 0..n - 1 {
             if bit_flag & (1 << i) != 0 {
                 sep.push(i);
             }
