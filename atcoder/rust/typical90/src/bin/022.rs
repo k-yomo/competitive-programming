@@ -5,11 +5,12 @@ use std::collections::*;
 use std::io::Write;
 use std::ops::Bound::*;
 
-use itertools::*;
 use itertools::__std_iter::once;
+use itertools::*;
 use itertools_num::ItertoolsNum;
-use proconio::*;
+use num_integer::gcd;
 use proconio::marker::*;
+use proconio::*;
 use superslice::*;
 
 #[macro_export]
@@ -21,8 +22,10 @@ macro_rules! min {($ a : expr $ (, ) * ) => {{$ a } } ; ($ a : expr , $ b : expr
 #[macro_export]
 macro_rules! max {($ a : expr $ (, ) * ) => {{$ a } } ; ($ a : expr , $ b : expr $ (, ) * ) => {{std :: cmp :: max ($ a , $ b ) } } ; ($ a : expr , $ ($ rest : expr ) ,+ $ (, ) * ) => {{std :: cmp :: max ($ a , max ! ($ ($ rest ) ,+ ) ) } } ; }
 
-fn main() { 
+fn main() {
     input! {
-        
+        a: i128, b: i128, c: i128,
     }
+    let size = gcd(gcd(a, b), c);
+    println!("{}", a / size + b / size + c / size - 3);
 }
