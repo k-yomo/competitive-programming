@@ -5,11 +5,11 @@ use std::collections::*;
 use std::io::Write;
 use std::ops::Bound::*;
 
-use itertools::*;
 use itertools::__std_iter::once;
+use itertools::*;
 use itertools_num::ItertoolsNum;
-use proconio::*;
 use proconio::marker::*;
+use proconio::*;
 use superslice::*;
 
 #[macro_export]
@@ -21,8 +21,26 @@ macro_rules! min {($ a : expr $ (, ) * ) => {{$ a } } ; ($ a : expr , $ b : expr
 #[macro_export]
 macro_rules! max {($ a : expr $ (, ) * ) => {{$ a } } ; ($ a : expr , $ b : expr $ (, ) * ) => {{std :: cmp :: max ($ a , $ b ) } } ; ($ a : expr , $ ($ rest : expr ) ,+ $ (, ) * ) => {{std :: cmp :: max ($ a , max ! ($ ($ rest ) ,+ ) ) } } ; }
 
-fn main() { 
+fn main() {
     input! {
-        
+        n: usize,
+        s: Chars,
     }
+
+    let m = (10_i128.pow(9) + 7);
+    let mut dp = vec![0_i128; 7];
+    for c in s {
+        match c {
+            'a' => dp[0] += 1,
+            't' => dp[1] += dp[0] % m,
+            'c' => dp[2] += dp[1] % m,
+            'o' => dp[3] += dp[2] % m,
+            'd' => dp[4] += dp[3] % m,
+            'e' => dp[5] += dp[4] % m,
+            'r' => dp[6] += dp[5] % m,
+            _ => {}
+        }
+    }
+
+    println!("{}", dp[6] % m)
 }
