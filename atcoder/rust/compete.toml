@@ -98,9 +98,9 @@ use proconio::*;
 use proconio::marker::*;
 use superslice::*;
 
-fn main() { 
+fn main() {
     input! {
-        
+
     }
 }
 '''
