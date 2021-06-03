@@ -1,0 +1,23 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      YAKINIKU
+    out: |
+      Yes
+  - name: sample2
+    in: |
+      TAKOYAKI
+    out: |
+      No
+  - name: sample3
+    in: |
+      YAK
+    out: |
+      No
+
+extend: []
