@@ -6,8 +6,8 @@ use std::io::Write;
 use std::ops::Bound::*;
 
 use itertools::*;
-use proconio::*;
 use proconio::marker::*;
+use proconio::*;
 use superslice::*;
 
 fn main() {
@@ -28,9 +28,23 @@ fn main() {
     let (even_max, even_max_count) = even.iter().max_by(|a, b| a.1.cmp(&b.1)).unwrap();
     let (odd_max, odd_max_count) = odd.iter().max_by(|a, b| a.1.cmp(&b.1)).unwrap();
     if even_max == odd_max {
-        let (_, even_second_max_count) = even.iter().filter(|a| a.0 != even_max).max_by(|a, b| a.1.cmp(&b.1)).unwrap_or((&0, &0));
-        let (_, odd_second_max_count) = odd.iter().filter(|b| b.0 != odd_max).max_by(|a, b| a.1.cmp(&b.1)).unwrap_or((&0, &0));
-        println!("{}", n - std::cmp::max(even_max_count + odd_second_max_count, even_second_max_count + odd_max_count));
+        let (_, even_second_max_count) = even
+            .iter()
+            .filter(|a| a.0 != even_max)
+            .max_by(|a, b| a.1.cmp(&b.1))
+            .unwrap_or((&0, &0));
+        let (_, odd_second_max_count) = odd
+            .iter()
+            .filter(|b| b.0 != odd_max)
+            .max_by(|a, b| a.1.cmp(&b.1))
+            .unwrap_or((&0, &0));
+        println!(
+            "{}",
+            n - std::cmp::max(
+                even_max_count + odd_second_max_count,
+                even_second_max_count + odd_max_count
+            )
+        );
     } else {
         println!("{}", n - even_max_count - odd_max_count);
     }
