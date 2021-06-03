@@ -9,13 +9,6 @@ import (
 )
 
 func main() {
-	io, flush := NewIO()
-	defer flush()
-
-	n := io.ScanInt()
-	for {
-
-	}
 }
 
 // +, +
