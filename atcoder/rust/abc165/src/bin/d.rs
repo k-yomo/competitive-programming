@@ -6,12 +6,15 @@ use std::io::Write;
 use std::ops::Bound::*;
 
 use itertools::*;
-use proconio::*;
 use proconio::marker::*;
+use proconio::*;
 use superslice::*;
 
-fn main() { 
+fn main() {
     input! {
-        
+        a: u128, b: u128, n: u128,
     }
+
+    let x = std::cmp::min(b - 1, n);
+    println!("{}", (a * x) / b - a * (x / b))
 }
