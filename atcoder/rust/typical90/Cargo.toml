@@ -37,6 +37,67 @@ config = "../compete.toml"
 027 = { name = "typical90-027", problem = { platform = "atcoder", contest = "typical90", index = "027", url = "https://atcoder.jp/contests/typical90/tasks/typical90_aa" } }
 028 = { name = "typical90-028", problem = { platform = "atcoder", contest = "typical90", index = "028", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ab" } }
 029 = { name = "typical90-029", problem = { platform = "atcoder", contest = "typical90", index = "029", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ac" } }
+030 = { name = "typical90-030", problem = { platform = "atcoder", contest = "typical90", index = "030", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ad" } }
+031 = { name = "typical90-031", problem = { platform = "atcoder", contest = "typical90", index = "031", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ae" } }
+032 = { name = "typical90-032", problem = { platform = "atcoder", contest = "typical90", index = "032", url = "https://atcoder.jp/contests/typical90/tasks/typical90_af" } }
+033 = { name = "typical90-033", problem = { platform = "atcoder", contest = "typical90", index = "033", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ag" } }
+034 = { name = "typical90-034", problem = { platform = "atcoder", contest = "typical90", index = "034", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ah" } }
+035 = { name = "typical90-035", problem = { platform = "atcoder", contest = "typical90", index = "035", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ai" } }
+036 = { name = "typical90-036", problem = { platform = "atcoder", contest = "typical90", index = "036", url = "https://atcoder.jp/contests/typical90/tasks/typical90_aj" } }
+037 = { name = "typical90-037", problem = { platform = "atcoder", contest = "typical90", index = "037", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ak" } }
+038 = { name = "typical90-038", problem = { platform = "atcoder", contest = "typical90", index = "038", url = "https://atcoder.jp/contests/typical90/tasks/typical90_al" } }
+039 = { name = "typical90-039", problem = { platform = "atcoder", contest = "typical90", index = "039", url = "https://atcoder.jp/contests/typical90/tasks/typical90_am" } }
+040 = { name = "typical90-040", problem = { platform = "atcoder", contest = "typical90", index = "040", url = "https://atcoder.jp/contests/typical90/tasks/typical90_an" } }
+041 = { name = "typical90-041", problem = { platform = "atcoder", contest = "typical90", index = "041", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ao" } }
+042 = { name = "typical90-042", problem = { platform = "atcoder", contest = "typical90", index = "042", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ap" } }
+043 = { name = "typical90-043", problem = { platform = "atcoder", contest = "typical90", index = "043", url = "https://atcoder.jp/contests/typical90/tasks/typical90_aq" } }
+044 = { name = "typical90-044", problem = { platform = "atcoder", contest = "typical90", index = "044", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ar" } }
+045 = { name = "typical90-045", problem = { platform = "atcoder", contest = "typical90", index = "045", url = "https://atcoder.jp/contests/typical90/tasks/typical90_as" } }
+046 = { name = "typical90-046", problem = { platform = "atcoder", contest = "typical90", index = "046", url = "https://atcoder.jp/contests/typical90/tasks/typical90_at" } }
+047 = { name = "typical90-047", problem = { platform = "atcoder", contest = "typical90", index = "047", url = "https://atcoder.jp/contests/typical90/tasks/typical90_au" } }
+048 = { name = "typical90-048", problem = { platform = "atcoder", contest = "typical90", index = "048", url = "https://atcoder.jp/contests/typical90/tasks/typical90_av" } }
+049 = { name = "typical90-049", problem = { platform = "atcoder", contest = "typical90", index = "049", url = "https://atcoder.jp/contests/typical90/tasks/typical90_aw" } }
+050 = { name = "typical90-050", problem = { platform = "atcoder", contest = "typical90", index = "050", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ax" } }
+051 = { name = "typical90-051", problem = { platform = "atcoder", contest = "typical90", index = "051", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ay" } }
+052 = { name = "typical90-052", problem = { platform = "atcoder", contest = "typical90", index = "052", url = "https://atcoder.jp/contests/typical90/tasks/typical90_az" } }
+053 = { name = "typical90-053", problem = { platform = "atcoder", contest = "typical90", index = "053", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ba" } }
+054 = { name = "typical90-054", problem = { platform = "atcoder", contest = "typical90", index = "054", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bb" } }
+055 = { name = "typical90-055", problem = { platform = "atcoder", contest = "typical90", index = "055", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bc" } }
+056 = { name = "typical90-056", problem = { platform = "atcoder", contest = "typical90", index = "056", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bd" } }
+057 = { name = "typical90-057", problem = { platform = "atcoder", contest = "typical90", index = "057", url = "https://atcoder.jp/contests/typical90/tasks/typical90_be" } }
+058 = { name = "typical90-058", problem = { platform = "atcoder", contest = "typical90", index = "058", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bf" } }
+059 = { name = "typical90-059", problem = { platform = "atcoder", contest = "typical90", index = "059", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bg" } }
+060 = { name = "typical90-060", problem = { platform = "atcoder", contest = "typical90", index = "060", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bh" } }
+061 = { name = "typical90-061", problem = { platform = "atcoder", contest = "typical90", index = "061", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bi" } }
+062 = { name = "typical90-062", problem = { platform = "atcoder", contest = "typical90", index = "062", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bj" } }
+063 = { name = "typical90-063", problem = { platform = "atcoder", contest = "typical90", index = "063", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bk" } }
+064 = { name = "typical90-064", problem = { platform = "atcoder", contest = "typical90", index = "064", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bl" } }
+065 = { name = "typical90-065", problem = { platform = "atcoder", contest = "typical90", index = "065", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bm" } }
+066 = { name = "typical90-066", problem = { platform = "atcoder", contest = "typical90", index = "066", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bn" } }
+067 = { name = "typical90-067", problem = { platform = "atcoder", contest = "typical90", index = "067", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bo" } }
+068 = { name = "typical90-068", problem = { platform = "atcoder", contest = "typical90", index = "068", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bp" } }
+069 = { name = "typical90-069", problem = { platform = "atcoder", contest = "typical90", index = "069", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bq" } }
+070 = { name = "typical90-070", problem = { platform = "atcoder", contest = "typical90", index = "070", url = "https://atcoder.jp/contests/typical90/tasks/typical90_br" } }
+071 = { name = "typical90-071", problem = { platform = "atcoder", contest = "typical90", index = "071", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bs" } }
+072 = { name = "typical90-072", problem = { platform = "atcoder", contest = "typical90", index = "072", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bt" } }
+073 = { name = "typical90-073", problem = { platform = "atcoder", contest = "typical90", index = "073", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bu" } }
+074 = { name = "typical90-074", problem = { platform = "atcoder", contest = "typical90", index = "074", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bv" } }
+075 = { name = "typical90-075", problem = { platform = "atcoder", contest = "typical90", index = "075", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bw" } }
+076 = { name = "typical90-076", problem = { platform = "atcoder", contest = "typical90", index = "076", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bx" } }
+077 = { name = "typical90-077", problem = { platform = "atcoder", contest = "typical90", index = "077", url = "https://atcoder.jp/contests/typical90/tasks/typical90_by" } }
+078 = { name = "typical90-078", problem = { platform = "atcoder", contest = "typical90", index = "078", url = "https://atcoder.jp/contests/typical90/tasks/typical90_bz" } }
+079 = { name = "typical90-079", problem = { platform = "atcoder", contest = "typical90", index = "079", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ca" } }
+080 = { name = "typical90-080", problem = { platform = "atcoder", contest = "typical90", index = "080", url = "https://atcoder.jp/contests/typical90/tasks/typical90_cb" } }
+081 = { name = "typical90-081", problem = { platform = "atcoder", contest = "typical90", index = "081", url = "https://atcoder.jp/contests/typical90/tasks/typical90_cc" } }
+082 = { name = "typical90-082", problem = { platform = "atcoder", contest = "typical90", index = "082", url = "https://atcoder.jp/contests/typical90/tasks/typical90_cd" } }
+083 = { name = "typical90-083", problem = { platform = "atcoder", contest = "typical90", index = "083", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ce" } }
+084 = { name = "typical90-084", problem = { platform = "atcoder", contest = "typical90", index = "084", url = "https://atcoder.jp/contests/typical90/tasks/typical90_cf" } }
+085 = { name = "typical90-085", problem = { platform = "atcoder", contest = "typical90", index = "085", url = "https://atcoder.jp/contests/typical90/tasks/typical90_cg" } }
+086 = { name = "typical90-086", problem = { platform = "atcoder", contest = "typical90", index = "086", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ch" } }
+087 = { name = "typical90-087", problem = { platform = "atcoder", contest = "typical90", index = "087", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ci" } }
+088 = { name = "typical90-088", problem = { platform = "atcoder", contest = "typical90", index = "088", url = "https://atcoder.jp/contests/typical90/tasks/typical90_cj" } }
+089 = { name = "typical90-089", problem = { platform = "atcoder", contest = "typical90", index = "089", url = "https://atcoder.jp/contests/typical90/tasks/typical90_ck" } }
+090 = { name = "typical90-090", problem = { platform = "atcoder", contest = "typical90", index = "090", url = "https://atcoder.jp/contests/typical90/tasks/typical90_cl" } }
 
 [[bin]]
 name = "typical90-001"
@@ -153,6 +214,250 @@ path = "src/bin/028.rs"
 [[bin]]
 name = "typical90-029"
 path = "src/bin/029.rs"
+
+[[bin]]
+name = "typical90-030"
+path = "src/bin/030.rs"
+
+[[bin]]
+name = "typical90-031"
+path = "src/bin/031.rs"
+
+[[bin]]
+name = "typical90-032"
+path = "src/bin/032.rs"
+
+[[bin]]
+name = "typical90-033"
+path = "src/bin/033.rs"
+
+[[bin]]
+name = "typical90-034"
+path = "src/bin/034.rs"
+
+[[bin]]
+name = "typical90-035"
+path = "src/bin/035.rs"
+
+[[bin]]
+name = "typical90-036"
+path = "src/bin/036.rs"
+
+[[bin]]
+name = "typical90-037"
+path = "src/bin/037.rs"
+
+[[bin]]
+name = "typical90-038"
+path = "src/bin/038.rs"
+
+[[bin]]
+name = "typical90-039"
+path = "src/bin/039.rs"
+
+[[bin]]
+name = "typical90-040"
+path = "src/bin/040.rs"
+
+[[bin]]
+name = "typical90-041"
+path = "src/bin/041.rs"
+
+[[bin]]
+name = "typical90-042"
+path = "src/bin/042.rs"
+
+[[bin]]
+name = "typical90-043"
+path = "src/bin/043.rs"
+
+[[bin]]
+name = "typical90-044"
+path = "src/bin/044.rs"
+
+[[bin]]
+name = "typical90-045"
+path = "src/bin/045.rs"
+
+[[bin]]
+name = "typical90-046"
+path = "src/bin/046.rs"
+
+[[bin]]
+name = "typical90-047"
+path = "src/bin/047.rs"
+
+[[bin]]
+name = "typical90-048"
+path = "src/bin/048.rs"
+
+[[bin]]
+name = "typical90-049"
+path = "src/bin/049.rs"
+
+[[bin]]
+name = "typical90-050"
+path = "src/bin/050.rs"
+
+[[bin]]
+name = "typical90-051"
+path = "src/bin/051.rs"
+
+[[bin]]
+name = "typical90-052"
+path = "src/bin/052.rs"
+
+[[bin]]
+name = "typical90-053"
+path = "src/bin/053.rs"
+
+[[bin]]
+name = "typical90-054"
+path = "src/bin/054.rs"
+
+[[bin]]
+name = "typical90-055"
+path = "src/bin/055.rs"
+
+[[bin]]
+name = "typical90-056"
+path = "src/bin/056.rs"
+
+[[bin]]
+name = "typical90-057"
+path = "src/bin/057.rs"
+
+[[bin]]
+name = "typical90-058"
+path = "src/bin/058.rs"
+
+[[bin]]
+name = "typical90-059"
+path = "src/bin/059.rs"
+
+[[bin]]
+name = "typical90-060"
+path = "src/bin/060.rs"
+
+[[bin]]
+name = "typical90-061"
+path = "src/bin/061.rs"
+
+[[bin]]
+name = "typical90-062"
+path = "src/bin/062.rs"
+
+[[bin]]
+name = "typical90-063"
+path = "src/bin/063.rs"
+
+[[bin]]
+name = "typical90-064"
+path = "src/bin/064.rs"
+
+[[bin]]
+name = "typical90-065"
+path = "src/bin/065.rs"
+
+[[bin]]
+name = "typical90-066"
+path = "src/bin/066.rs"
+
+[[bin]]
+name = "typical90-067"
+path = "src/bin/067.rs"
+
+[[bin]]
+name = "typical90-068"
+path = "src/bin/068.rs"
+
+[[bin]]
+name = "typical90-069"
+path = "src/bin/069.rs"
+
+[[bin]]
+name = "typical90-070"
+path = "src/bin/070.rs"
+
+[[bin]]
+name = "typical90-071"
+path = "src/bin/071.rs"
+
+[[bin]]
+name = "typical90-072"
+path = "src/bin/072.rs"
+
+[[bin]]
+name = "typical90-073"
+path = "src/bin/073.rs"
+
+[[bin]]
+name = "typical90-074"
+path = "src/bin/074.rs"
+
+[[bin]]
+name = "typical90-075"
+path = "src/bin/075.rs"
+
+[[bin]]
+name = "typical90-076"
+path = "src/bin/076.rs"
+
+[[bin]]
+name = "typical90-077"
+path = "src/bin/077.rs"
+
+[[bin]]
+name = "typical90-078"
+path = "src/bin/078.rs"
+
+[[bin]]
+name = "typical90-079"
+path = "src/bin/079.rs"
+
+[[bin]]
+name = "typical90-080"
+path = "src/bin/080.rs"
+
+[[bin]]
+name = "typical90-081"
+path = "src/bin/081.rs"
+
+[[bin]]
+name = "typical90-082"
+path = "src/bin/082.rs"
+
+[[bin]]
+name = "typical90-083"
+path = "src/bin/083.rs"
+
+[[bin]]
+name = "typical90-084"
+path = "src/bin/084.rs"
+
+[[bin]]
+name = "typical90-085"
+path = "src/bin/085.rs"
+
+[[bin]]
+name = "typical90-086"
+path = "src/bin/086.rs"
+
+[[bin]]
+name = "typical90-087"
+path = "src/bin/087.rs"
+
+[[bin]]
+name = "typical90-088"
+path = "src/bin/088.rs"
+
+[[bin]]
+name = "typical90-089"
+path = "src/bin/089.rs"
+
+[[bin]]
+name = "typical90-090"
+path = "src/bin/090.rs"
 [dependencies]
 num = "=0.2.1"
 num-bigint = "=0.2.6"
