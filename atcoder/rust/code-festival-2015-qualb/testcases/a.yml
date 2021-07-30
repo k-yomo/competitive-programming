@@ -1,0 +1,18 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      on
+    out: |
+      noon
+  - name: sample2
+    in: |
+      meat
+    out: |
+      teammate
+
+extend: []
