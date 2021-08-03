@@ -14,6 +14,14 @@ use superslice::*;
 
 fn main() {
     input! {
-
+        n: usize,
+        a: [f64; n]
     }
+
+    let mut diff = 0.0;
+    for i in 0..n-1 {
+        diff += a[i + 1] - a[i]
+    }
+
+    println!("{}", diff / (n as f64 - 1.0))
 }
