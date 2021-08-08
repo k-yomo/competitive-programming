@@ -18,9 +18,5 @@ fn main() {
         b: usize
     }
 
-    for i in 0..=255 {
-        if a ^ i == b {
-            return println!("{}", i);
-        }
-    }
+    println!("{}", a ^ b);
 }
