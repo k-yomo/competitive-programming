@@ -11,9 +11,12 @@ use itertools_num::ItertoolsNum;
 use proconio::*;
 use proconio::marker::*;
 use superslice::*;
+use num_integer::lcm;
 
 fn main() {
     input! {
-
+        a: usize, b: usize,
     }
+
+    println!(lcm(a, b));
 }
