@@ -16,15 +16,8 @@ fn main() {
         q: [usize; n],
     }
 
-    let mut p_i = 0;
-    let mut q_i = 0;
-    for (i, comb) in (1..n + 1).permutations(n).enumerate() {
-        if comb.eq(&p) {
-            p_i = i;
-        }
-        if comb.eq(&q) {
-            q_i = i;
-        }
-    }
-    println!("{}", (p_i as i64 - q_i as i64).abs());
+    let perms = (1..=n).permutations(n).collect::<Vec<Vec<usize>>>();
+    let a = perms.iter().position(|perm| perm.eq(&p)).unwrap() as i64;
+    let b = perms.iter().position(|perm| perm.eq(&q)).unwrap() as i64;
+    println!("{}", (a - b).abs());
 }
