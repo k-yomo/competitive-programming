@@ -14,6 +14,19 @@ use superslice::*;
 
 fn main() {
     input! {
-
+        n: usize,x: usize,
+        ab: [(usize, usize); n],
     }
+
+    let mut min_time = std::usize::MAX;
+    let mut cur_time = 0;
+    for (i, (a, b)) in ab.iter().enumerate() {
+        cur_time += a;
+        let play_time = (x-i) * b;
+        if cur_time + play_time < min_time {
+            min_time = cur_time + play_time;
+        }
+        cur_time += b;
+    }
+    println!("{}", min_time);
 }
